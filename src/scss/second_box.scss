@@ -1,0 +1,41 @@
+@import 'variables';
+
+.second-panel {
+  .text-color-purple {
+    position: relative;
+
+    .text-border-purple {
+      position: absolute;
+      top: 6px;
+      right: -6px;
+      z-index: -100;
+    }
+  }
+
+  .card-title {
+    color: $purple;
+    font-weight: bold;
+  }
+
+  .card-toggle {
+    .card-body {
+      box-shadow: $purple -1px 7px 34px -10px;
+
+      &.collapsed {
+        box-shadow: none;
+
+        .card-title {
+          color: $purple;
+        }
+      }
+
+      .card-title {
+        color: $crimson;
+      }
+    }
+  }
+
+  .toggle-element {
+    font-size: 10px;
+  }
+}

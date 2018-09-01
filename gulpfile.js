@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/css/scss/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss','src/scss/*/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
@@ -17,23 +17,6 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
-/**
- * Copy fonts
- * @return {Stream}
- */
-gulp.task('fonts', function() {
-    log('Copying fonts');
-
-
-    return gulp
-        .src([
-            'src/fonts/*.*',
-            'src/fonts/*.{ttf,eot,woff,svg}'
-        ],)
-        .pipe(gulp.dest("src/fonts"))
-        .pipe(browserSync.stream());
-});
-
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
@@ -41,7 +24,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/css/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss', 'src/scss/*/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

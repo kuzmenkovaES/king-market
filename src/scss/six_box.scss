@@ -1,0 +1,14 @@
+.sixth-panel {
+  .list-style-plus {
+    li {
+      div {
+        h5 {
+          letter-spacing: 1px;
+        }
+      }
+      &:before {
+        text-indent: -30px;
+      }
+    }
+  }
+}

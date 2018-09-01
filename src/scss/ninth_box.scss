@@ -1,6 +1,5 @@
 .ninth-panel {
   .card-body {
-    min-height: 450px;
     color: white;
 
     .video {
@@ -18,11 +17,12 @@
       color: white;
     }
   }
+
   .news-1 {
-    background: url("../../images/news-1.png") no-repeat;
+    background: url("../images/news-1.png") no-repeat;
   }
 
   .news-2 {
-    background: url("../../images/news-2.png") no-repeat;
+    background: url("../images/news-2.png") no-repeat;
   }
 }

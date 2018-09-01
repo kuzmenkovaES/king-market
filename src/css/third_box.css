@@ -2,9 +2,3 @@
   position: relative; }
   .third-panel .left-side-box .text-style-bold {
     position: absolute; }
-    .third-panel .left-side-box .text-style-bold .text-color-purple {
-      font-size: 2em; }
-  .third-panel .left-side-box .box-3-image {
-    width: 100%;
-    position: absolute;
-    left: -20%; }

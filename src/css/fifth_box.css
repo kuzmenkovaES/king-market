@@ -3,44 +3,19 @@
 
 .fifth-panel .left-side-box {
   position: relative; }
-  .fifth-panel .left-side-box .box-5-image {
-    position: absolute;
-    width: 125%;
-    left: -30%; }
 
 .fifth-panel .right-side-box {
   position: relative; }
-  .fifth-panel .right-side-box .box-5-image {
-    position: absolute;
-    width: 125%;
-    right: -28%; }
 
 .fifth-panel .step-ico {
   display: inline-block;
-  font-size: 10px;
   position: relative; }
   .fifth-panel .step-ico.active .line-ico {
     border-top-color: #F2006C; }
 
-.fifth-panel .line-ico {
-  position: absolute;
-  width: 60px;
-  right: 10px;
-  top: 0; }
-
-.fifth-panel .presentation-box {
-  height: 300px; }
-
 .fifth-panel .colored-rounds {
-  width: 10px;
-  height: 10px;
   border-radius: 10px;
-  background: #F2006C;
-  display: inline-block; }
+  background: #F2006C; }
 
 .fifth-panel .row-list-item-problem .flex-row {
   position: relative; }
-  .fifth-panel .row-list-item-problem .flex-row .colored-rounds {
-    position: absolute;
-    top: 8px;
-    left: 0px; }

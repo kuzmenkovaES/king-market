@@ -2,6 +2,7 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900&subset=cyrillic,cyrillic-ext');
 @import 'icons';
+//all panels
 @import 'second_box';
 @import 'third_box';
 @import 'fourth_box';
@@ -13,13 +14,20 @@
 
 * {
     color: $main-color;
-    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
 }
 
-.header-panel {
-    height: 1000px;
+//@media (max-width: $mobile) {
+    @import 'mobile/main_mobile';
+//}
+//@media (max-width: $tablet) {
+//    @import 'tablets/main-tablet';
+//}
+//@media (max-width: $desktop) {
+//    @import 'desctop/main-desctop';
+//}
 
+.header-panel {
     &>.row {
         height: inherit;
         position: relative;
@@ -27,12 +35,7 @@
         .left-side-box {
             height: inherit;
             position: relative;
-            background: url("../../images/box-1-bg.png")no-repeat;
 
-            .row {
-                padding-left: 12%;
-                margin-top: 16%;
-            }
         }
 
         .right-side-box {
@@ -40,47 +43,19 @@
 
             .row {
                 position: absolute;
-                bottom: 5%;
-                right: 0;
-                padding: 26px;
-
 
                 .king-size {
                     font-weight: bold;
-                    //font-size: calcFluidFontSize(1, 8, 400, 800, rem);
-                    font-size: 8rem;
                     text-align: right;
-
-                    .who {
-                        //font-size: calcFluidFontSize(1, 12, 30, 80, rem);
-                        font-size: 12rem;
-                    }
-                }
-
-                .btn-group {
-                    margin-left: 32%;
                 }
             }
         }
     }
 }
 
+
 .footer-panel {
     .media-box {
-        .col-6 {
-
-            .views {
-                font-size: 0.8rem;
-            }
-
-            .media-link {
-                font-size: 0.9rem;
-            }
-        }
-
-        .icon {
-            font-size: 1.4rem;
-        }
         .icon-social-instagram {
             background: linear-gradient(to bottom right, $color-gradient-btn-start, $color-gradient-btn-finish);
             -webkit-background-clip: text;
@@ -91,12 +66,8 @@
 }
 
 .logo {
-    width: 100px;
-    height: 50px;
-
     img {
-        width: 177px;
-        height: 177px;
+        width: 100%;
     }
 }
 
@@ -149,7 +120,7 @@
 .btn-gradient {
     color: white;
     font-weight: bold;
-    border-radius: 6px;
+    border-radius: 4px;
     background-repeat-x: no-repeat;
     background-image: linear-gradient(to right, $color-gradient-btn-start 25%, $color-gradient-btn-finish);
 }
@@ -168,16 +139,6 @@
     &.active {
         color: $purple;
     }
-}
-
-.lion-header {
-    width: 52%;
-    height: 66%;
-    position: absolute;
-    top: 10%;
-    right: -23%;
-    z-index: 10;
-
 }
 
 .opst-4 {

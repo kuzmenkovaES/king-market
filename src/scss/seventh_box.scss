@@ -1,0 +1,25 @@
+@import 'variables';
+
+.seventh-panel {
+  .btn-registration {
+    .icon-sign-in {
+      opacity: 0.6;
+    }
+  }
+
+  .list-style-plus {
+    li {
+      color: $light-gray;
+
+      div {
+        h5 {
+          letter-spacing: 1px;
+        }
+      }
+
+      &:before {
+        text-indent: -30px;
+      }
+    }
+  }
+}

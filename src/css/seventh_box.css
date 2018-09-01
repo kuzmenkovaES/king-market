@@ -1,4 +1,9 @@
-.btn-registration {
-  margin-top: -23px; }
-  .btn-registration .icon-sign-in {
-    opacity: 0.6; }
+.seventh-panel .btn-registration .icon-sign-in {
+  opacity: 0.6; }
+
+.seventh-panel .list-style-plus li {
+  color: #888888; }
+  .seventh-panel .list-style-plus li div h5 {
+    letter-spacing: 1px; }
+  .seventh-panel .list-style-plus li:before {
+    text-indent: -30px; }

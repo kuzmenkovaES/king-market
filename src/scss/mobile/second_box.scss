@@ -1,0 +1,35 @@
+@import '../variables';
+
+.second-panel {
+  >.row {
+    padding-left: 20px;
+
+    p,
+    strong {
+      font-size: 12px;
+    }
+  }
+
+  .font-weight-bold {
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .text-color-light-gray,
+  .card-text {
+    font-size: 10px;
+    width: 80%;
+  }
+
+  .card-toggle {
+    .card-body {
+      min-height: 140px;
+    }
+  }
+
+  .toggle-element {
+    font-size: 10px;
+  }
+
+}

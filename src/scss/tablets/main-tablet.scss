@@ -1,0 +1,87 @@
+@import '../variables';
+* {
+  font-size: 1rem;
+}
+
+.header-panel {
+  max-height: 30%;
+  height: 600px;
+
+  &>.row {
+    .left-side-box {
+      background: url("../../images/box-1-bg.png")no-repeat;
+      background-size: 160%;
+
+      .row {
+        padding-left: 12%;
+        margin-top: 13%;
+
+        .title-big-1 {
+          font-size: 2.4rem;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          span {
+            font-size: inherit;
+          }
+        }
+
+        .text-color-light-gray {
+          flex: 0 0 75.333333%;
+          max-width: 75.333333%;
+        }
+
+        .btn-width {
+          flex: 0 0 43.333333%;
+          max-width: 43.333333%;
+        }
+
+        .btn-group {
+          margin-top: 5%;
+          .btn-lang {
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .right-side-box {
+      .row {
+        bottom: 5%;
+        right: 0;
+        padding: 26px;
+
+
+        .king-size {
+          font-size: 3.8rem;
+          line-height: 4.5rem;
+
+          .who {
+            font-size: 6rem;
+          }
+        }
+
+        .btn-group {
+          margin-left: 0;
+          //display: grid;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 70px;
+    height: 50px;
+  }
+
+  .lion-header {
+    width: 110%;
+    max-width: 230px;
+    position: absolute;
+    top: 30%;
+    right: -24%;
+    z-index: 10;
+
+  }
+
+}

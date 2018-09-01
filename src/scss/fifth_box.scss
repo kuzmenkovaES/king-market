@@ -1,0 +1,37 @@
+@import 'variables';
+
+.fifth-panel {
+  .mark-title {
+      display: block;
+  }
+
+  .left-side-box {
+    position: relative;
+  }
+
+  .right-side-box {
+    position: relative;
+  }
+
+  .step-ico {
+    display: inline-block;
+    position: relative;
+
+    &.active {
+      .line-ico {
+        border-top-color: $crimson;
+      }
+    }
+  }
+
+  .colored-rounds {
+    border-radius: 10px;
+    background: $crimson;
+  }
+
+  .row-list-item-problem {
+    .flex-row {
+      position: relative;
+    }
+  }
+}

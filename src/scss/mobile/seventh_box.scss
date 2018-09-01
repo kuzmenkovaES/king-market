@@ -1,0 +1,62 @@
+@import '../variables';
+
+.seventh-panel {
+  .row{
+    padding-right: 15px;
+
+    &.d-flex {
+      .text-4 {
+        font-size: 3.5em;
+
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .box-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .btn-registration {
+    margin-top: -15px;
+  }
+
+  .list-style-plus {
+    > li {
+      margin-bottom: 10px;
+
+      div {
+        margin-top: -13px;
+
+        h5 {
+          letter-spacing: 1px;
+        }
+      }
+
+      &:before {
+        text-indent: -30px;
+      }
+    }
+  }
+
+  .list-with-dashed {
+    li {
+      list-style-type: none;
+      list-style-position: inside;
+      margin-bottom: 5px;
+
+      &:before {
+        content: '\2014';
+
+      }
+    }
+  }
+}

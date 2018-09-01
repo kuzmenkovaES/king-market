@@ -1,0 +1,131 @@
+@import '../variables';
+//panels
+@import 'second_box';
+@import 'third_box';
+@import 'fourth_box';
+@import 'fifth_box';
+@import 'six_box';
+@import 'seventh_box';
+@import 'eighth_box';
+@import 'ninth_box';
+
+* {
+    font-size: 0.7rem;
+}
+
+.header-panel {
+    max-height: 30%;
+    height: 400px;
+
+    &>.row {
+        .left-side-box {
+            background: url("../../images/box-1-bg.png")no-repeat;
+            background-size: 164%;
+            .row {
+                padding-left: 12%;
+                margin-top: 13%;
+
+                .title-big-1 {
+                    font-size: 1.4rem;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+
+                    span {
+                        font-size: inherit;
+                    }
+                }
+
+                .text-color-light-gray {
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%;
+                    margin-bottom: 20%;
+                }
+
+                .btn-width {
+                    flex: 0 0 50.333333%;
+                    max-width: 50.333333%;
+                }
+
+                .btn-group {
+                    margin-top: 12%;
+
+                    .btn-lang {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+
+        .right-side-box {
+            .row {
+                bottom: 5%;
+                right: 0;
+                padding: 26px;
+
+
+                .king-size {
+                    font-size: 2.5rem;
+                    line-height: 4.5rem;
+
+                    .who {
+                        font-size: 5rem;
+                    }
+                }
+
+                .btn-group {
+                    margin-left: 0;
+                    display: grid;
+                }
+            }
+        }
+    }
+
+    .lion-header {
+        width: 110%;
+        max-width: 150px;
+        position: absolute;
+        top: 30%;
+        right: -30%;
+        z-index: 10;
+
+    }
+
+}
+
+.footer-panel {
+    .row {
+        padding-left: 15px;
+    }
+    .footer-contacts {
+        font-size: 0.8rem;
+
+        span {
+            font-size: 0.8rem;
+        }
+    }
+    .media-box {
+        .text-color-light-gray {
+            margin-bottom: 0.5rem;
+        }
+        .col-6 {
+            margin-right: 0.9rem;
+            .views {
+                font-size: 0.6rem;
+            }
+
+            .media-link {
+                font-size: 0.7rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .icon {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.logo {
+    width: 70px;
+    height: 50px;
+}
