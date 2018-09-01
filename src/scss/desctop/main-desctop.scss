@@ -1,6 +1,15 @@
 @import '../variables';
+//panels
+@import 'second_box';
+@import 'third_box';
+@import 'fourth_box';
+@import 'fifth_box';
+@import 'six_box';
+@import 'seventh_box';
+@import 'eighth_box';
+@import 'ninth_box';
 * {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .header-panel {
@@ -14,11 +23,10 @@
 
       .row {
         padding-left: 12%;
-        margin-top: 13%;
+        margin-top: 11%;
 
         .title-big-1 {
           font-size: 2.4rem;
-          margin-top: 20px;
           margin-bottom: 20px;
 
           span {
@@ -26,18 +34,8 @@
           }
         }
 
-        .text-color-light-gray {
-          flex: 0 0 75.333333%;
-          max-width: 75.333333%;
-        }
-
-        .btn-width {
-          flex: 0 0 43.333333%;
-          max-width: 43.333333%;
-        }
-
         .btn-group {
-          margin-top: -10px;
+          margin-top: 70px;
 
           .btn-lang {
             background: transparent;
@@ -54,11 +52,11 @@
 
 
         .king-size {
-          font-size: 5.5rem;
-          line-height: 5.5rem;
+          font-size: 7.5rem;
+          line-height: 7.5rem;
 
           .who {
-            font-size: 9rem;
+            font-size: 11rem;
           }
         }
 
@@ -69,19 +67,52 @@
     }
   }
 
-  .logo {
-    width: 100px;
-    height: 50px;
-  }
-
   .lion-header {
     width: 110%;
-    max-width: 270px;
+    max-width: 300px;
     position: absolute;
-    top: 15%;
+    top: 13%;
     right: -19%;
     z-index: 10;
 
   }
+}
 
+.footer-panel {
+  .row {
+    padding-left: 15px;
+  }
+  .footer-contacts {
+    font-size: 1.4rem;
+
+    span {
+      font-size: 1.2rem;
+    }
+  }
+  .media-box {
+    .text-color-light-gray {
+      margin-bottom: 0.5rem;
+    }
+    .col-6 {
+      margin-right: 0.9rem;
+
+      .views {
+        font-size: 0.8rem;
+      }
+
+      .media-link {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.logo {
+  width: 110px;
+  height: 90px;
 }

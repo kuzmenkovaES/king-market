@@ -1,0 +1,45 @@
+.sixth-panel {
+  .row {
+    padding-left: 15px;
+  }
+
+  .right-side-box {
+    padding-left: 0;
+    margin-bottom: 20px;
+
+    .image-box {
+      width: 126%;
+      margin-left: -20%;
+    }
+  }
+
+  .list-style-plus {
+    li {
+      div {
+        margin-top: -14px;
+        p, span {
+          font-size: 0.7rem;
+        }
+
+        h5 {
+          letter-spacing: 1px;
+        }
+      }
+      &:before {
+        text-indent: -30px;
+      }
+    }
+  }
+
+  .form-contacts {
+    padding-right: 15px;
+
+    .btn-gradient-border {
+      background: transparent;
+    }
+
+    .form-text, .text-color-light-gray {
+      font-size: 1rem;
+    }
+  }
+}

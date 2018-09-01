@@ -1,52 +1,50 @@
 @import '../variables';
 
 .second-panel {
-  .font-weight-bold {
-    position: relative;
+  >.row {
+    padding-left: 20px;
 
-    .text-border-purple {
-      position: absolute;
-      top: 6px;
-      right: -6px;
-      z-index: -100;
+    .text-1 {
+      font-size: 6em;
+    }
+
+    p,
+    strong {
+      font-size: 12px;
+    }
+  }
+
+  .font-weight-bold {
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .card-deck {
+    .card {
+      &:first-child{
+        margin-right: -18px;
+      }
+
+      &:last-child {
+        margin-left: 46px;
+      }
     }
   }
 
   .text-color-light-gray,
   .card-text {
     font-size: 10px;
-  }
-
-  .card-title {
-    color: $purple;
-    font-weight: bold;
+    width: 80%;
   }
 
   .card-toggle {
     .card-body {
       min-height: 140px;
-      box-shadow: $purple -1px 7px 34px -10px;
-
-      &.collapsed {
-        box-shadow: none;
-
-        .card-title {
-          color: $purple;
-
-        }
-
-      }
-      .card-title {
-        color: $crimson;
-      }
-
     }
-
-
   }
 
   .toggle-element {
     font-size: 10px;
   }
-
 }
