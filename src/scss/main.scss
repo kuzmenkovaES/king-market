@@ -17,17 +17,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-//@media (max-width: $mobile) {
-//    @import 'mobile/main_mobile';
-//}
-//@media (max-width: $tablet) {
-//    @import 'tablets/main-tablet';
-//}
-//@media (max-width: $desktop) {
+@media (max-width: $mobile) {
+   @import 'mobile/main_mobile';
+}
+@media (max-width: $tablet) {
+    @import 'tablets/main-tablet';
+}
+@media (max-width: $desktop) {
     @import 'desctop/main-desctop';
-//}
-
-
+}
 
 .header-panel {
     &>.row {
