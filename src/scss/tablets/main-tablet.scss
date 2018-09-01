@@ -1,4 +1,13 @@
 @import '../variables';
+//panels
+@import 'second_box';
+@import 'third_box';
+@import 'fourth_box';
+@import 'fifth_box';
+@import 'six_box';
+@import 'seventh_box';
+@import 'eighth_box';
+@import 'ninth_box';
 * {
   font-size: 1rem;
 }
@@ -69,11 +78,6 @@
     }
   }
 
-  .logo {
-    width: 70px;
-    height: 50px;
-  }
-
   .lion-header {
     width: 110%;
     max-width: 230px;
@@ -83,5 +87,43 @@
     z-index: 10;
 
   }
-
 }
+
+.footer-panel {
+  .row {
+    padding-left: 15px;
+  }
+  .footer-contacts {
+    font-size: 0.8rem;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  .media-box {
+    .text-color-light-gray {
+      margin-bottom: 0.5rem;
+    }
+    .col-6 {
+      margin-right: 0.9rem;
+      .views {
+        font-size: 0.6rem;
+      }
+
+      .media-link {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .icon {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.logo {
+  width: 70px;
+  height: 50px;
+}
+
