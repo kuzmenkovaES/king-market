@@ -120,7 +120,11 @@
 
 .btn-transparent {
     background: transparent;
-    color: white;
+    color: white !important;
+
+    &:hover {
+        color: $crimson !important;
+    }
 }
 
 .btn-gradient {
