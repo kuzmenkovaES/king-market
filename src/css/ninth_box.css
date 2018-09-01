@@ -1,0 +1,18 @@
+.ninth-panel .card-body {
+  min-height: 450px;
+  color: white; }
+  .ninth-panel .card-body .video {
+    font-size: 10px; }
+  .ninth-panel .card-body p {
+    opacity: 0.7;
+    letter-spacing: 1.2px;
+    color: white; }
+  .ninth-panel .card-body h2 {
+    opacity: 0.9;
+    color: white; }
+
+.ninth-panel .news-1 {
+  background: url("../../images/news-1.png") no-repeat; }
+
+.ninth-panel .news-2 {
+  background: url("../../images/news-2.png") no-repeat; }

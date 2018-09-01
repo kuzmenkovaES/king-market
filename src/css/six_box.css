@@ -1,0 +1,9 @@
+.sixth-panel .right-side-box {
+  position: relative; }
+  .sixth-panel .right-side-box .image-box {
+    position: absolute;
+    left: -51%;
+    width: 150%; }
+
+.sixth-panel .list-style-plus li:before {
+  text-indent: -20px; }

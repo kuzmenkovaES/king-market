@@ -1,0 +1,46 @@
+@import 'variables';
+
+.fourth-panel {
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 30%;
+    width: 47px;
+    height: 49px;
+    border-radius: 3px !important;
+  }
+
+  .carousel-control-prev {
+    left: -5%;
+  }
+
+  .carousel-control-next {
+    right: -5%;
+  }
+
+  .carousel-item {
+    .position {
+      font-size: 15px;
+    }
+    .description {
+      font-size: 13px;
+    }
+    .box-image {
+      position: relative;
+
+      .border-image {
+        position: absolute;
+        top: 15px;
+        left: -15px;
+        width: 180px;
+        height: 260px;
+        border: 1px solid rgba($crimson, 0.4);
+        z-index: -1;
+      }
+
+      .carusel-image {
+        width: 180px;
+      }
+    }
+
+  }
+}

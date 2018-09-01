@@ -1,0 +1,28 @@
+.second-panel .font-weight-bold {
+  position: relative; }
+  .second-panel .font-weight-bold .text-border-purple {
+    position: absolute;
+    top: 6px;
+    right: -6px;
+    z-index: -100; }
+
+.second-panel .text-color-light-gray,
+.second-panel .card-text {
+  font-size: 10px; }
+
+.second-panel .card-title {
+  color: #523AB4;
+  font-weight: bold; }
+
+.second-panel .card-toggle .card-body {
+  min-height: 140px;
+  box-shadow: #523AB4 -1px 7px 34px -10px; }
+  .second-panel .card-toggle .card-body.collapsed {
+    box-shadow: none; }
+    .second-panel .card-toggle .card-body.collapsed .card-title {
+      color: #523AB4; }
+  .second-panel .card-toggle .card-body .card-title {
+    color: #F2006C; }
+
+.second-panel .toggle-element {
+  font-size: 10px; }

@@ -1,0 +1,220 @@
+/*@import 'mobile-direct-message';*/
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900&subset=cyrillic,cyrillic-ext');
+@import 'icons';
+@import 'second_box';
+@import 'third_box';
+@import 'fourth_box';
+@import 'fifth_box';
+@import 'six_box';
+@import 'seventh_box';
+@import 'eighth_box';
+@import 'ninth_box';
+
+* {
+    color: $main-color;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-panel {
+    height: 1000px;
+
+    &>.row {
+        height: inherit;
+        position: relative;
+
+        .left-side-box {
+            height: inherit;
+            position: relative;
+            background: url("../../images/box-1-bg.png")no-repeat;
+
+            .row {
+                padding-left: 12%;
+                margin-top: 16%;
+            }
+        }
+
+        .right-side-box {
+            background: linear-gradient(to bottom, $color-gradient-header-srart-left, $color-gradient-header-finish-right);
+
+            .row {
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                padding: 26px;
+
+
+                .king-size {
+                    font-weight: bold;
+                    //font-size: calcFluidFontSize(1, 8, 400, 800, rem);
+                    font-size: 8rem;
+                    text-align: right;
+
+                    .who {
+                        //font-size: calcFluidFontSize(1, 12, 30, 80, rem);
+                        font-size: 12rem;
+                    }
+                }
+
+                .btn-group {
+                    margin-left: 32%;
+                }
+            }
+        }
+    }
+}
+
+.footer-panel {
+    .media-box {
+        .col-6 {
+
+            .views {
+                font-size: 0.8rem;
+            }
+
+            .media-link {
+                font-size: 0.9rem;
+            }
+        }
+
+        .icon {
+            font-size: 1.4rem;
+        }
+        .icon-social-instagram {
+            background: linear-gradient(to bottom right, $color-gradient-btn-start, $color-gradient-btn-finish);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0B2349;
+        }
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+
+    img {
+        width: 177px;
+        height: 177px;
+    }
+}
+
+.text-color-purple {
+    color: $purple;
+}
+
+.text-color-purple {
+    color: $purple;
+}
+
+.text-color-crimson {
+    color: $crimson;
+}
+
+.text-color-light-gray {
+    color: $light-gray;
+}
+
+.text-border-crimson {
+    color: white;
+    text-shadow: $crimson 1px 0px, $crimson 1px 1px, $crimson 0px 1px, $crimson -1px 1px, $crimson -1px 0px, $crimson -1px -1px, $crimson 0px -1px, $crimson 1px -1px;
+}
+
+.text-border-purple {
+    color: white;
+    text-shadow: $text-border-purple 1px 0px, $text-border-purple 1px 1px, $text-border-purple 0px 1px, $text-border-purple -1px 1px, $text-border-purple -1px 0px, $text-border-purple -1px -1px, $text-border-purple 0px -1px, $text-border-purple 1px -1px;
+}
+
+.text-border-white {
+    opacity: 0.3;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $color-gradient-header-srart-right;
+    text-shadow: white 1px 0px, white 1px 1px, white 0px 1px, white -1px 1px, white -1px 0px, white -1px -1px, white 0px -1px, white 1px -1px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-middle {
+    font-size: 13px;
+}
+
+.btn-transparent {
+    background: transparent;
+    color: white;
+}
+
+.btn-gradient {
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    background-repeat-x: no-repeat;
+    background-image: linear-gradient(to right, $color-gradient-btn-start 25%, $color-gradient-btn-finish);
+}
+
+.btn-gradient-border {
+    border: 3px solid;
+    border-image: linear-gradient(to right, #5A37B0 7%, #e90370 56%);
+    border-image-slice: 1;
+    border-radius: 8px;
+}
+
+.btn-lang {
+    color: $text-border-purple;
+    font-weight: bold;
+
+    &.active {
+        color: $purple;
+    }
+}
+
+.lion-header {
+    width: 52%;
+    height: 66%;
+    position: absolute;
+    top: 10%;
+    right: -23%;
+    z-index: 10;
+
+}
+
+.opst-4 {
+    opacity: 0.4;
+}
+
+.opst-5 {
+    opacity: 0.5;
+}
+
+.opst-6 {
+    opacity: 0.6;
+}
+
+.opst-7 {
+    opacity: 0.7;
+}
+
+.opst-8 {
+    opacity: 0.8;
+}
+
+.opst-9 {
+    opacity: 0.9;
+}
+
+
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+    $f-min: strip-unit($f-min);
+    $f-max: strip-unit($f-max);
+    $w-min: strip-unit($w-min);
+    $w-max: strip-unit($w-max);
+
+    $k: ($f-max - $f-min)/($w-max - $w-min);
+    $b: $f-min - $k * $w-min;
+
+    $b: $b + $units;
+
+    @return calc( #{$k} * 100vw + #{$b} );
+}

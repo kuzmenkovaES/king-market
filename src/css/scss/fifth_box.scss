@@ -1,0 +1,71 @@
+@import 'variables';
+
+.fifth-panel {
+  .mark-title {
+      display: block;
+  }
+
+  .left-side-box {
+    position: relative;
+
+    .box-5-image {
+      position: absolute;
+      width: 125%;
+      left: -30%;
+    }
+  }
+
+  .right-side-box {
+    position: relative;
+
+    .box-5-image {
+      position: absolute;
+      width: 125%;
+      right: -28%;
+    }
+  }
+
+  .step-ico {
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+
+    &.active {
+      .line-ico {
+        border-top-color: $crimson;
+      }
+    }
+  }
+
+  .line-ico {
+    position: absolute;
+    width: 60px;
+    right: 10px;
+    top: 0;
+  }
+
+  .presentation-box {
+    height: 300px;
+  }
+
+  .colored-rounds {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: $crimson;
+    display: inline-block;
+
+  }
+
+  .row-list-item-problem {
+    .flex-row {
+      position: relative;
+
+      .colored-rounds {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+      }
+    }
+  }
+}
