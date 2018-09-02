@@ -17,7 +17,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 100px) and (max-width: $pre-tablet) {
+@media (min-width: $small-mobile) and (max-width: $pre-mobile) {
+   @import 'mobile/main_mobile';
+}
+
+@media (min-width: $mobile) and (max-width: $pre-tablet) {
    @import 'mobile/main_mobile';
 }
 
@@ -135,8 +139,6 @@
         color: $crimson !important;
     }
 }
-
-
 
 .btn-gradient-border {
     border: 3px solid;

@@ -32,6 +32,11 @@
 
   .row-card-bonus {
     .card-body {
+      > div {
+        &:first-child {
+          padding-bottom: 0!important;
+        }
+      }
       p {
         font-size: 0.66em;
       }
@@ -39,6 +44,7 @@
       span {
         font-size: 0.9em;
       }
+
       .gift {
         width: 30px;
         height: 20px;
