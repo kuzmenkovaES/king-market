@@ -125,26 +125,40 @@
 }
 
 .btn-gradient {
-    color: white;
+    color: white !important;
     font-weight: bold;
     border-radius: 4px;
     background-repeat-x: no-repeat;
     background-image: linear-gradient(to right, $color-gradient-btn-start 25%, $color-gradient-btn-finish);
+
+    &:hover {
+        color: $crimson !important;
+    }
 }
+
+
 
 .btn-gradient-border {
     border: 3px solid;
     border-image: linear-gradient(to right, #5A37B0 7%, #e90370 56%);
     border-image-slice: 1;
     border-radius: 8px;
+
+    &:hover {
+        color: $crimson !important;
+    }
 }
 
 .btn-lang {
-    color: $text-border-purple;
+    color: $text-border-purple !important;
     font-weight: bold;
 
     &.active {
-        color: $purple;
+        color: $purple !important;
+    }
+
+    &:hover {
+        color: $crimson !important;
     }
 }
 
