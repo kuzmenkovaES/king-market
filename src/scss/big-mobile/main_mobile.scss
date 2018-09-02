@@ -58,18 +58,36 @@
                 padding: 26px;
 
 
-                .king-size {
-                    font-size: 3.2rem;
-                    line-height: 4.5rem;
+                @media (max-width: 654.98px) {
+                    .king-size {
+                        font-size: 3.2rem;
+                        line-height: 4.5rem;
 
-                    .who {
-                        font-size: 7rem;
+                        .who {
+                            font-size: 7rem;
+                        }
+                    }
+
+                    .btn-group {
+                        margin-left: 0;
+                        display: grid;
                     }
                 }
 
-                .btn-group {
-                    margin-left: 0;
-                    display: grid;
+                @media (min-width: 655px) {
+                    .king-size {
+                        font-size: 4.2rem;
+                        line-height: 4.5rem;
+
+                        .who {
+                            font-size: 8rem;
+                        }
+                    }
+
+                    .btn-group {
+                        margin-left: 0;
+                        display: grid;
+                    }
                 }
             }
         }
