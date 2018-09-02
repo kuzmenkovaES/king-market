@@ -1,0 +1,138 @@
+@import '../variables';
+
+.fifth-panel {
+  .row {
+    padding-left: 15px;
+  }
+
+  .text-4 {
+    font-size: 6em;
+
+    span {
+      font-size: 1em;
+    }
+  }
+
+  .mark-title {
+    display: block;
+
+    span,
+    h4 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .presentation-box {
+    height: 340px;
+    margin-bottom: 20px;
+
+    .left-side-box {
+      position: relative;
+
+      .box-5-image {
+        width: 100%;
+      }
+
+      & + div {
+        p {
+          font-size: 12px;
+        }
+
+        .btn-gradient-border {
+          span {
+            vertical-align: text-bottom;
+          }
+        }
+      }
+    }
+
+    p,
+    strong {
+      font-size: 1.3em;
+    }
+
+    .btn-gradient-border {
+      background: transparent;
+    }
+  }
+
+  .row-list-item-problem {
+      position: relative;
+
+      .colored-rounds {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        width: 7px;
+        height: 7px;
+        border-radius: 10px;
+        background: $crimson;
+        display: inline-block;
+
+        &+p {
+          font-size: 1.1rem;
+        }
+      }
+  }
+
+  .text-resolve-problem {
+      font-size: 1.5rem;
+  }
+
+  .list-style-plus {
+    margin-bottom: 30px;
+
+    > li {
+      font-size: 1rem;
+    }
+  }
+
+  .right-side-box {
+    position: relative;
+
+    .font-weight-bold {
+      font-size: 1.1rem;
+    }
+
+    .box-5-image {
+      width: 100%;
+    }
+
+    .step-ico {
+      display: inline-block;
+      position: relative;
+
+      &.active {
+        .line-ico {
+          border-top-color: $crimson;
+        }
+      }
+
+      &.col-3 {
+        p.text-color-light-gray {
+          font-size: 0.66rem;
+        }
+      }
+
+      .title-step-ico {
+        font-size: 1rem;
+      }
+    }
+
+    .line-ico {
+      position: absolute;
+      width: 20px;
+      right: 10px;
+      top: 0;
+    }
+
+    .text,
+    strong {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-/*@import 'mobile-direct-message';*/
+/*@import 'extra-small-mobile-direct-message';*/
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900&subset=cyrillic,cyrillic-ext');
 @import 'icons';
@@ -17,20 +17,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-//@media (min-width: $small-mobile) and (max-width: $pre-mobile) {
-//   @import 'mobile/main_mobile';
-//}
-
-@media (min-width: $small-mobile) and (max-width: $pre-tablet) {
-   @import 'mobile/main_mobile';
+@media (max-width: $extra-sm-mobile) {
+    @import 'extra-small-mobile/main_mobile';
 }
 
+@media (min-width: $land-mobile-start) and (max-width: $land-mobile-end) {
+    @import 'big-mobile/main_mobile';
+}
 
-@media (min-width: $tablet) and (max-width: $pre-desktop) {
+@media (min-width: $tablet-start) and (max-width: $tablet-end) {
     @import 'tablets/main-tablet';
+ }
+
+@media (min-width: $desctop-start) and (max-width: $desctop-end) {
+    @import 'desctop/main-desctop';
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $large-desctop) {
     @import 'desctop/main-desctop';
 }
 
@@ -117,6 +120,10 @@
 
 .font-size-middle {
     font-size: 13px;
+}
+
+.font-weight-lighter {
+    font-weight: lighter;
 }
 
 .btn-transparent {

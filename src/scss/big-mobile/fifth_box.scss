@@ -9,7 +9,7 @@
     font-size: 6em;
 
     span {
-      font-size: inherit;
+      font-size: 1em;
     }
   }
 
@@ -20,10 +20,14 @@
     h4 {
       font-size: 1.4rem;
     }
+
+    p {
+      font-size: 12px;
+    }
   }
 
   .presentation-box {
-    height: 300px;
+    height: 390px;
     margin-bottom: 20px;
 
     .left-side-box {
@@ -31,6 +35,18 @@
 
       .box-5-image {
         width: 100%;
+      }
+
+      & + div {
+        p {
+          font-size: 12px;
+        }
+
+        .btn-gradient-border {
+          span {
+            vertical-align: text-bottom;
+          }
+        }
       }
     }
 
@@ -58,19 +74,18 @@
         display: inline-block;
 
         &+p {
-          font-size: 1rem;
+          font-size: 1.1rem;
         }
       }
   }
 
-  .font-weight-bold {
-    span {
+  .text-resolve-problem {
       font-size: 1.5rem;
-    }
   }
 
   .list-style-plus {
     margin-bottom: 30px;
+
     > li {
       font-size: 1rem;
     }
@@ -97,10 +112,8 @@
         }
       }
 
-      &.col-3 {
-        p.text-color-light-gray {
-          font-size: 0.66rem;
-        }
+      p.text-color-light-gray {
+        font-size: 0.66rem;
       }
 
       .title-step-ico {

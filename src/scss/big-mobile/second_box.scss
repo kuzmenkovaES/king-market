@@ -1,0 +1,45 @@
+@import '../variables';
+
+.second-panel {
+  .left-transform,
+  .right-transform {
+    display: none;
+  }
+
+  >.row {
+    padding-left: 20px;
+
+    p,
+    strong {
+      font-size: 12px;
+    }
+  }
+
+  .font-weight-bold {
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .text-color-light-gray,
+  .card-text {
+    font-size: 10px;
+    width: 80%;
+  }
+
+  .card-toggle {
+    .card-body {
+      min-height: 140px;
+    }
+  }
+  .card-deck {
+    .card:first-child {
+      margin-left: 21px;
+    }
+  }
+
+  .toggle-element {
+    font-size: 10px;
+  }
+
+}

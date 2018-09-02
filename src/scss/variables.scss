@@ -11,11 +11,16 @@ $color-gradient-header-srart-left: #975FE0;
 $color-gradient-header-srart-right: #975EE0;
 $color-gradient-header-finish-left: #4C4080;
 $color-gradient-header-finish-right: #4C3F81;
-$small-mobile: 100px;
-$pre-mobile: 300px;
-$mobile: 500px;
-$pre-tablet: 749.98px;
-$tablet: 750px;
-$pre-desktop: 900.98px;
-$desktop: 901px;
 
+$extra-sm-mobile: 575.98px;
+
+$land-mobile-start: 576px;
+$land-mobile-end: 767.98px;
+
+$tablet-start: 768px;
+$tablet-end: 991.98px;
+
+$desctop-start: 992px;
+$desctop-end: 1199.98px;
+
+$large-desctop: 1200px;

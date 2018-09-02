@@ -36,6 +36,10 @@
       div {
         margin-top: -13px;
 
+        p {
+          font-size: 13px;
+        }
+
         h5 {
           letter-spacing: 1px;
         }
@@ -52,6 +56,7 @@
       list-style-type: none;
       list-style-position: inside;
       margin-bottom: 5px;
+      font-size: 13px;
 
       &:before {
         content: '\2014';

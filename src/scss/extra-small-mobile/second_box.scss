@@ -1,6 +1,11 @@
 @import '../variables';
 
 .second-panel {
+  .left-transform,
+  .right-transform {
+    display: none;
+  }
+
   >.row {
     padding-left: 20px;
 
