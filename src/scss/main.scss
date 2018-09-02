@@ -17,16 +17,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: $mobile) {
+@media (min-width: 100px) and (max-width: $pre-tablet) {
    @import 'mobile/main_mobile';
 }
 
-@media (max-width: $tablet) {
-    @import 'tablets/main-tablet';
-}
 
-@media (max-width: $desktop) {
-    @import 'desctop/main-desctop';
+@media (min-width: $tablet) and (max-width: $pre-desktop) {
+    @import 'tablets/main-tablet';
 }
 
 @media (min-width: $desktop) {
