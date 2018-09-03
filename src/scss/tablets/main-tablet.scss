@@ -35,18 +35,29 @@
           }
         }
 
-        .text-color-light-gray {
-          flex: 0 0 75.333333%;
-          max-width: 75.333333%;
-        }
-
-        .btn-width {
-          flex: 0 0 33.333333%;
-          max-width: 33.333333%;
-        }
-
         .btn-group {
-          margin-top: 5%;
+
+          @media (min-width: $tablet-start) and (max-width: 820.98px) {
+            margin-top: 15px;
+          }
+
+          @media (min-width: 821px) and (max-width: 850.98px) {
+            margin-top: 5px;
+          }
+
+          @media (min-width: 851px) and (max-width: 890.98px) {
+            margin-top: -1.5%;
+          }
+
+          @media (min-width: 891px) and (max-width: 930.98px) {
+            margin-top: -2%;
+          }
+
+          @media (min-width: 931px) and (max-width: $tablet-end) {
+            margin-top: -5%;
+          }
+
+
           .btn-lang {
             background: transparent;
           }
@@ -60,32 +71,118 @@
         right: 0;
         padding: 26px;
 
+        @media (min-width: $tablet-start) and (max-width: 820.98px) {
+          .king-size {
+            font-size: 4.2rem;
+            line-height: 5.5rem;
 
-        .king-size {
-          font-size: 3.8rem;
-          line-height: 4.5rem;
+            .who {
+              font-size: 8.3rem;
+            }
+          }
 
-          .who {
-            font-size: 6rem;
+          .btn-group {
+            margin-left: 5%;
+
           }
         }
 
-        .btn-group {
-          margin-left: 0;
-          //display: grid;
+        @media (min-width: 821px) and (max-width: 850.98px) {
+          .king-size {
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+
+            .who {
+              font-size: 8.3rem;
+            }
+          }
+
+          .btn-group {
+            margin-left: 5%;
+
+          }
         }
+
+        @media (min-width: 851px) and (max-width: 890.98px) {
+          .king-size {
+            font-size: 4.7rem;
+            line-height: 5.6rem;
+
+            .who {
+              font-size: 8.3rem;
+            }
+          }
+
+          .btn-group {
+            margin-left: 7%;
+
+          }
+        }
+
+        @media (min-width: 891px) and (max-width: 930.98px) {
+          .king-size {
+            font-size: 4.6rem;
+            line-height: 5.7rem;
+
+            .who {
+              font-size: 8.4rem;
+            }
+          }
+
+          .btn-group {
+            margin-left: 8%;
+
+          }
+        }
+
+        @media (min-width: 931px) and (max-width: $tablet-end) {
+          .king-size {
+            font-size: 4.7rem;
+            line-height: 5.7rem;
+
+            .who {
+              font-size: 8.5rem;
+            }
+          }
+
+          .btn-group {
+            margin-left: 10%;
+
+          }
+        }
+
       }
     }
   }
 
   .lion-header {
     width: 110%;
-    max-width: 210px;
     position: absolute;
-    top: 22%;
-    right: -25%;
     z-index: 10;
 
+    @media (min-width: $tablet-start) and (max-width: 850.98px) {
+      max-width: 210px;
+      top: 112px;
+      right: -94px
+    }
+
+    @media (min-width: 851px) and (max-width: 890.98px) {
+      max-width: 230px;
+      top: 112px;
+      right: -100px
+    }
+
+    @media (min-width: 891px) and (max-width: 930.98px) {
+      max-width: 250px;
+      top: 112px;
+      right: -113px
+    }
+
+    @media (min-width: 931px) and (max-width: $tablet-end) {
+      max-width: 270px;
+      top: 112px;
+      right: -120px
+    }
   }
 }
 
@@ -93,31 +190,35 @@
   .row {
     padding-left: 15px;
   }
+
   .footer-contacts {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     span {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
+
   .media-box {
     .text-color-light-gray {
       margin-bottom: 0.5rem;
     }
+
     .col-6 {
       margin-right: 0.9rem;
+
       .views {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
 
       .media-link {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 0;
       }
     }
 
     .icon {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
   }
 }

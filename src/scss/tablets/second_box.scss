@@ -1,6 +1,11 @@
 @import '../variables';
 
 .second-panel {
+  .left-transform,
+  .right-transform {
+    display: none;
+  }
+
   >.row {
     padding-left: 20px;
 
@@ -13,6 +18,24 @@
   .font-weight-bold {
     span {
       font-size: inherit;
+    }
+  }
+
+  .card-deck {
+    padding: 0;
+    margin-left: 0%;
+
+    .card {
+      &:first-child{
+        padding-right: 2%;
+        margin-right: 4%;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 4%;
+        margin: 0;
+      }
     }
   }
 

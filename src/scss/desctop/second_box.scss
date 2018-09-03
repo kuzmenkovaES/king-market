@@ -21,13 +21,19 @@
   }
 
   .card-deck {
+    padding: 0;
+    margin-left: 0%;
+
     .card {
       &:first-child{
-        margin-right: -18px;
+        padding-right: 2%;
+        margin-right: 4%;
+        margin-left: 0;
       }
 
       &:last-child {
-        margin-left: 46px;
+        padding-right: 4%;
+        margin: 0;
       }
     }
   }
