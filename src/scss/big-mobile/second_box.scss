@@ -28,6 +28,10 @@
   }
 
   .card-toggle {
+    >div {
+      padding: 0;
+    }
+
     .card-body {
       min-height: 140px;
     }

@@ -13,7 +13,6 @@
   font-size: 0.8rem;
 }
 
-
 .header-panel {
   max-height: 30%;
   height: 600px;
@@ -25,7 +24,7 @@
 
       .row {
         padding-left: 12%;
-        margin-top: 11%;
+        margin-top: 80px;
 
         .title-big-1 {
           font-size: 2.4rem;
@@ -52,18 +51,35 @@
         right: 0;
         padding: 26px;
 
+        @media (min-width: $desctop-start) and (max-width: 1060.98px) {
+          .king-size {
+            font-size: 7rem;
+            line-height: 8rem;
 
-        .king-size {
-          font-size: 7.5rem;
-          line-height: 7.5rem;
+            .who {
+              font-size: 11rem;
+            }
+          }
 
-          .who {
-            font-size: 11rem;
+          .btn-group {
+            margin-left: 23%;
           }
         }
 
-        .btn-group {
-          margin-left: 23%;
+        @media (min-width: 1061px) {
+          .king-size {
+            font-size: 7.5rem;
+            line-height: 7.5rem;
+
+            .who {
+              font-size: 11rem;
+            }
+          }
+
+          .btn-group {
+            margin-left: 23%;
+            margin-top: 20px;
+          }
         }
       }
     }
@@ -71,12 +87,26 @@
 
   .lion-header {
     width: 110%;
-    max-width: 300px;
     position: absolute;
-    top: 13%;
-    right: -19%;
     z-index: 10;
 
+    @media (min-width: $desctop-start) and (max-width: 1060.98px) {
+      max-width: 290px;
+      top: 100px;
+      right: -110px;
+    }
+
+    @media (min-width: 1061px) and (max-width: $desctop-end) {
+      max-width: 310px;
+      top: 110px;
+      right: -130px;
+    }
+
+    @media (min-width: $large-desctop) {
+      max-width: 380px;
+      top: 30px;
+      right: -170px;
+    }
   }
 }
 
@@ -84,6 +114,7 @@
   .row {
     padding-left: 15px;
   }
+
   .footer-contacts {
     font-size: 1.4rem;
 
@@ -91,10 +122,12 @@
       font-size: 1.2rem;
     }
   }
+
   .media-box {
     .text-color-light-gray {
       margin-bottom: 0.5rem;
     }
+
     .col-6 {
       margin-right: 0.9rem;
 

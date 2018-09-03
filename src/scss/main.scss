@@ -17,6 +17,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+
+    .container-fluid {
+        max-width: 1500px;
+    }
+}
+
 @media (max-width: $extra-sm-mobile) {
     @import 'extra-small-mobile/main_mobile';
 }
