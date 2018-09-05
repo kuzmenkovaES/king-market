@@ -21,6 +21,12 @@
     }
   }
 
+  .btn-gradient {
+    &+.card-text {
+      float: left;
+    }
+  }
+
   .text-color-light-gray,
   .card-text {
     font-size: 10px;

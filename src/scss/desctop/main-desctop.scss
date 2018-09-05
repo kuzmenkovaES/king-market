@@ -18,6 +18,7 @@
   height: 600px;
 
   &>.row {
+
     .left-side-box {
       background: url("../../images/box-1-bg.png")no-repeat;
       background-size: 110%;
@@ -25,21 +26,14 @@
       .row {
         padding-left: 12%;
         margin-top: 80px;
+        flex-direction: column;
 
         .title-big-1 {
           font-size: 2.4rem;
-          margin-bottom: 20px;
+          margin: 40px 0 20px;
 
           span {
             font-size: inherit;
-          }
-        }
-
-        .btn-group {
-          margin-top: 30px;
-
-          .btn-lang {
-            background: transparent;
           }
         }
       }
@@ -80,6 +74,28 @@
             margin-left: 23%;
             margin-top: 20px;
           }
+        }
+      }
+    }
+  }
+
+  .btn-bottom {
+    padding: 0 12% 0 6%;
+    position: absolute;
+    bottom: 20px;
+
+    .btn-lang {
+      background: transparent;
+    }
+
+    .btn-group-sign-in {
+      float: right;
+
+      .btn {
+        color: white;
+
+        .icon:before {
+          color: white;
         }
       }
     }

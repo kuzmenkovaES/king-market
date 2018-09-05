@@ -56,15 +56,23 @@ body {
 
         }
 
-        .right-side-box {
-            background: linear-gradient(to bottom, $color-gradient-header-srart-left, $color-gradient-header-finish-right);
+        @media (max-width: $tablet-end) {
+            .right-side-box {
+                display: none;
+            }
+        }
 
-            .row {
-                position: absolute;
+        @media (min-width: $desctop-start) {
+            .right-side-box {
+                background: linear-gradient(to bottom, $color-gradient-header-srart-left, $color-gradient-header-finish-right);
 
-                .king-size {
-                    font-weight: bold;
-                    text-align: right;
+                .row {
+                    position: absolute;
+
+                    .king-size {
+                        font-weight: bold;
+                        text-align: right;
+                    }
                 }
             }
         }
@@ -136,7 +144,7 @@ body {
 
 .btn-transparent {
     background: transparent;
-    color: white !important;
+    //color: white !important;
 
     &:hover {
         color: $crimson !important;
@@ -201,19 +209,4 @@ body {
 
 .opst-9 {
     opacity: 0.9;
-}
-
-
-@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
-    $f-min: strip-unit($f-min);
-    $f-max: strip-unit($f-max);
-    $w-min: strip-unit($w-min);
-    $w-max: strip-unit($w-max);
-
-    $k: ($f-max - $f-min)/($w-max - $w-min);
-    $b: $f-min - $k * $w-min;
-
-    $b: $b + $units;
-
-    @return calc( #{$k} * 100vw + #{$b} );
 }

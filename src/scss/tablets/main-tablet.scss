@@ -15,175 +15,63 @@
 
 .header-panel {
   max-height: 30%;
-  height: 600px;
+  height: 450px;
+  margin-bottom: 90px;
 
   &>.row {
     .left-side-box {
-      background: url("../../images/box-1-bg.png")no-repeat;
-      background-size: 160%;
+      //background: url("../../images/box-1-bg.png")no-repeat;
+      //background-size: 135%;
 
       .row {
-        padding-left: 12%;
-        margin-top: 13%;
+        padding:0 12%;
+        margin-top: 7%;
+        display: block;
+        text-align: center;
 
         .title-big-1 {
-          font-size: 2.4rem;
-          margin-top: 20px;
-          margin-bottom: 20px;
+          font-size: 1.4rem;
+          margin-top: 30px;
+          margin-bottom: 15px;
 
           span {
             font-size: inherit;
           }
         }
 
-        .btn-group {
-
-          @media (min-width: $tablet-start) and (max-width: 820.98px) {
-            margin-top: 15px;
-          }
-
-          @media (min-width: 821px) and (max-width: 850.98px) {
-            margin-top: 5px;
-          }
-
-          @media (min-width: 851px) and (max-width: 890.98px) {
-            margin-top: -1.5%;
-          }
-
-          @media (min-width: 891px) and (max-width: 930.98px) {
-            margin-top: -2%;
-          }
-
-          @media (min-width: 931px) and (max-width: $tablet-end) {
-            margin-top: -5%;
-          }
-
-
-          .btn-lang {
-            background: transparent;
-          }
+        .text-color-light-gray {
+          font-size: 0.9rem;
         }
       }
     }
+  }
 
-    .right-side-box {
-      .row {
-        bottom: 5%;
-        right: 0;
-        padding: 26px;
+  .btn-bottom {
+    padding:0 12%;
 
-        @media (min-width: $tablet-start) and (max-width: 820.98px) {
-          .king-size {
-            font-size: 4.2rem;
-            line-height: 5.5rem;
+    .btn-lang {
+      background: transparent;
+    }
 
-            .who {
-              font-size: 8.3rem;
-            }
-          }
+    .btn-group-sign-in {
+      float: right;
 
-          .btn-group {
-            margin-left: 5%;
+      .btn {
+        color: $crimson;
 
-          }
+        .icon:before {
+          color: $crimson;
         }
-
-        @media (min-width: 821px) and (max-width: 850.98px) {
-          .king-size {
-            font-size: 4.5rem;
-            line-height: 5.5rem;
-
-            .who {
-              font-size: 8.3rem;
-            }
-          }
-
-          .btn-group {
-            margin-left: 5%;
-
-          }
-        }
-
-        @media (min-width: 851px) and (max-width: 890.98px) {
-          .king-size {
-            font-size: 4.7rem;
-            line-height: 5.6rem;
-
-            .who {
-              font-size: 8.3rem;
-            }
-          }
-
-          .btn-group {
-            margin-left: 7%;
-
-          }
-        }
-
-        @media (min-width: 891px) and (max-width: 930.98px) {
-          .king-size {
-            font-size: 4.6rem;
-            line-height: 5.7rem;
-
-            .who {
-              font-size: 8.4rem;
-            }
-          }
-
-          .btn-group {
-            margin-left: 8%;
-
-          }
-        }
-
-        @media (min-width: 931px) and (max-width: $tablet-end) {
-          .king-size {
-            font-size: 4.7rem;
-            line-height: 5.7rem;
-
-            .who {
-              font-size: 8.5rem;
-            }
-          }
-
-          .btn-group {
-            margin-left: 10%;
-
-          }
-        }
-
       }
     }
   }
 
   .lion-header {
-    width: 110%;
-    position: absolute;
-    z-index: 10;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 110px;
+    @extend .img-tablet-center;
 
-    @media (min-width: $tablet-start) and (max-width: 850.98px) {
-      max-width: 210px;
-      top: 112px;
-      right: -94px
-    }
-
-    @media (min-width: 851px) and (max-width: 890.98px) {
-      max-width: 230px;
-      top: 112px;
-      right: -100px
-    }
-
-    @media (min-width: 891px) and (max-width: 930.98px) {
-      max-width: 250px;
-      top: 112px;
-      right: -113px
-    }
-
-    @media (min-width: 931px) and (max-width: $tablet-end) {
-      max-width: 270px;
-      top: 112px;
-      right: -120px
-    }
   }
 }
 
@@ -227,5 +115,11 @@
 .logo {
   width: 70px;
   height: 50px;
+  @extend .img-tablet-center;
 }
 
+.img-tablet-center {
+  margin-left: auto!important;
+  margin-right: auto!important;
+  display: block;
+}

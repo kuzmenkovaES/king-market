@@ -6,6 +6,9 @@
     right: -6px;
     z-index: -100; }
 
+.second-panel .btn-gradient {
+  padding: 20px; }
+
 .second-panel .card-title {
   color: #523AB4;
   font-weight: bold; }

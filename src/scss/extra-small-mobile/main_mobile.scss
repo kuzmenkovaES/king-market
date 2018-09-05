@@ -14,21 +14,24 @@
 }
 
 .header-panel {
-    max-height: 30%;
+    max-height: 40%;
     height: 400px;
+    margin-bottom: 80px;
 
     &>.row {
         .left-side-box {
-            background: url("../../images/box-1-bg.png")no-repeat;
-            background-size: 164%;
+            //background: url("../../images/box-1-bg.png")no-repeat;
+            //background-size: 164%;
 
             .row {
-                padding-left: 12%;
-                margin-top: 13%;
+                padding:0 12%;
+                margin-top: 7%;
+                display: block;
+                text-align: center;
 
                 .title-big-1 {
                     font-size: 1.4rem;
-                    margin-top: 20px;
+                    margin-top: 30px;
                     margin-bottom: 15px;
 
                     span {
@@ -37,105 +40,25 @@
                 }
 
                 .text-color-light-gray {
-                    margin-bottom: 30px;
                     font-size: 0.9rem;
-                }
-
-                .btn-group {
-                    margin-top: 0;
-
-                    .btn-lang {
-                        background: transparent;
-                    }
                 }
             }
         }
+    }
 
-        .right-side-box {
-            .row {
-                bottom: 5%;
-                right: 0;
-                padding: 26px;
+    .btn-bottom {
+        .btn-lang {
+            background: transparent;
+        }
 
+        .btn-group-sign-in {
+            float: right;
 
-                @media (max-width: 374.98px) {
-                    .king-size {
-                        font-size: 2.4rem;
-                        line-height: 3.9rem;
+            .btn {
+                color: $crimson;
 
-                        .who {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    .btn-group {
-                        margin-left: 10%;
-                        display: grid;
-                    }
-                }
-
-                @media (min-width: 375px) and (max-width: 411.98px) {
-                    .king-size {
-                        font-size: 2.5rem;
-                        line-height: 4.2rem;
-
-                        .who {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    .btn-group {
-                        margin-left: 15%;
-                        display: grid;
-                    }
-                }
-
-                @media (min-width: 412px) and (max-width: 475.98px) {
-                    .king-size {
-                        font-size: 2.9rem;
-                        line-height: 4.6rem;
-
-                        .who {
-                            font-size: 6rem;
-                        }
-                    }
-
-                    .btn-group {
-                        margin-left: 15%;
-                        display: grid;
-                    }
-                }
-
-                @media (min-width: 476px) and (max-width: 535.98px) {
-                    .king-size {
-                        font-size: 3.7rem;
-                        line-height: 5.2rem;
-
-                        .who {
-                            font-size: 7rem;
-                        }
-                    }
-
-                    .btn-group {
-                        margin-left: 15%;
-                        display: grid;
-                    }
-                }
-
-                @media (min-width: 536px) {
-                    .king-size {
-                        font-size: 4.2rem;
-                        line-height: 5.3rem;
-
-                        .who {
-                            font-size: 8rem;
-                        }
-                    }
-
-                    .btn-group {
-                        margin-left: 4%;
-                        justify-content: center!important;
-                    }
+                .icon:before {
+                    color: $crimson;
                 }
             }
         }
@@ -143,19 +66,16 @@
 
     .lion-header {
         width: 100%;
-        position: absolute;
-        z-index: 10;
+        margin-top: 10px;
+        @extend .img-center;
+
 
         @media (max-width: 374.98px) {
-            max-width: 120px;
-            top: 130px;
-            right: -40px;
+            max-width: 100px;
         }
 
         @media (min-width: 375px) {
-            max-width: 140px;
-            top: 90px;
-            right: -60px;
+            max-width: 110px;
         }
     }
 }
@@ -197,6 +117,14 @@
 }
 
 .logo {
-    width: 70px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
+
+    @extend .img-center;
+}
+
+.img-center {
+   margin-left: auto!important;
+   margin-right: auto!important;
+   display: block;
 }
