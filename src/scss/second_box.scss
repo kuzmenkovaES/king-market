@@ -15,7 +15,9 @@
   .btn-gradient {
     padding: 20px;
   }
-
+  .card {
+    border-radius: 0;
+  }
   .card-title {
     color: $purple;
     font-weight: bold;
@@ -25,7 +27,7 @@
     .card-body {
       box-shadow: $purple -1px 7px 34px -10px;
 
-      &.collapsed {
+      &[aria-expanded="false"] {
         box-shadow: none;
 
         .card-title {

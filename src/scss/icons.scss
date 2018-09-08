@@ -45,10 +45,12 @@
 .icon-play:before {
   content: "\e904";
 }
-.icon-quote:before {
-  content: "\e905";
-  color: #523ab4;
-  font-size: 3rem;
+.icon-quote {
+  &:before{
+    content: "\e905";
+    color: #523ab4;
+    font-size: 3rem;
+  }
 }
 .icon-sign-in:before {
   content: "\e906";
@@ -90,8 +92,17 @@
       font-family: 'icon' !important;
       color: $crimson;
       display: inline-block;
-
       text-indent: -30px;
     }
+  }
+}
+
+.quotation-box {
+  position: relative;
+  &:before {
+    font-family: 'icon' !important;
+    position: absolute;
+    left: -70px;
+    @extend .icon-quote;
   }
 }

@@ -7,9 +7,13 @@
 
 .fourth-panel .carousel-control-prev {
   left: -5%; }
+  .fourth-panel .carousel-control-prev:hover {
+    box-shadow: #523AB4 -1px 7px 34px -10px; }
 
 .fourth-panel .carousel-control-next {
   right: -5%; }
+  .fourth-panel .carousel-control-next:hover {
+    box-shadow: #523AB4 -1px 7px 34px -10px; }
 
 .fourth-panel .carousel-item .position {
   font-size: 15px; }

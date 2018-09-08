@@ -15,7 +15,7 @@
 
 .header-panel {
   max-height: 30%;
-  height: 600px;
+  height: 750px;
 
   &>.row {
 
@@ -24,16 +24,16 @@
       background-size: 110%;
 
       .row {
-        padding-left: 12%;
-        margin-top: 80px;
+        padding-left: 140px;
+        margin-top: 150px;
         flex-direction: column;
 
         .title-big-1 {
-          font-size: 2.4rem;
+          font-size: 75px;
           margin: 40px 0 20px;
 
           span {
-            font-size: inherit;
+            font-size: 75px;
           }
         }
       }
@@ -164,6 +164,6 @@
 }
 
 .logo {
-  width: 110px;
-  height: 90px;
+  width: 176px;
+  height: 176px;
 }

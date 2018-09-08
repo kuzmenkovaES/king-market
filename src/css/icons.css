@@ -37,7 +37,7 @@
 .icon-play:before {
   content: "\e904"; }
 
-.icon-quote:before {
+.icon-quote:before, .quotation-box:before {
   content: "\e905";
   color: #523ab4;
   font-size: 3rem; }
@@ -80,3 +80,10 @@
     color: #F2006C;
     display: inline-block;
     text-indent: -30px; }
+
+.quotation-box {
+  position: relative; }
+  .quotation-box:before {
+    font-family: 'icon' !important;
+    position: absolute;
+    left: -70px; }

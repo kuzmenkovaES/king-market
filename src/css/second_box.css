@@ -9,15 +9,18 @@
 .second-panel .btn-gradient {
   padding: 20px; }
 
+.second-panel .card {
+  border-radius: 0; }
+
 .second-panel .card-title {
   color: #523AB4;
   font-weight: bold; }
 
 .second-panel .card-toggle .card-body {
   box-shadow: #523AB4 -1px 7px 34px -10px; }
-  .second-panel .card-toggle .card-body.collapsed {
+  .second-panel .card-toggle .card-body[aria-expanded="false"] {
     box-shadow: none; }
-    .second-panel .card-toggle .card-body.collapsed .card-title {
+    .second-panel .card-toggle .card-body[aria-expanded="false"] .card-title {
       color: #523AB4; }
   .second-panel .card-toggle .card-body .card-title {
     color: #F2006C; }

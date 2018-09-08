@@ -11,10 +11,18 @@
 
   .carousel-control-prev {
     left: -5%;
+
+    &:hover {
+      box-shadow: $purple -1px 7px 34px -10px;
+    }
   }
 
   .carousel-control-next {
     right: -5%;
+
+    &:hover {
+      box-shadow: $purple -1px 7px 34px -10px;
+    }
   }
 
   .carousel-item {

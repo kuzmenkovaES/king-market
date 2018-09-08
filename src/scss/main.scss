@@ -125,9 +125,14 @@ body {
 
 .text-border-white {
     opacity: 0.3;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: $color-gradient-header-srart-right;
-    text-shadow: white 1px 0px, white 1px 1px, white 0px 1px, white -1px 1px, white -1px 0px, white -1px -1px, white 0px -1px, white 1px -1px;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    //text-shadow:
+    //        -1px -1px 0 white,
+    //        1px -1px 0 white,
+    //        -1px 1px 0 white,
+    //        1px 1px 0 white;
 }
 
 .font-size-10 {
@@ -144,7 +149,6 @@ body {
 
 .btn-transparent {
     background: transparent;
-    //color: white !important;
 
     &:hover {
         color: $crimson !important;
@@ -164,10 +168,22 @@ body {
 }
 
 .btn-gradient-border {
-    border: 3px solid;
-    border-image: linear-gradient(to right, #5A37B0 7%, #e90370 56%);
-    border-image-slice: 1;
-    border-radius: 8px;
+    color: black;
+    border-left: 3px solid $color-gradient-btn-start;
+    border-right: 3px solid $color-gradient-btn-finish;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 3px;
+    -moz-background-size: 100% 3px;
+    background-size: 100% 3px;
+    background-image: -webkit-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -webkit-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
+    background-image: -moz-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -moz-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
+    background-image: -o-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -o-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
+    background-image: linear-gradient(to right, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), linear-gradient(to right, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
 
     &:hover {
         color: $crimson !important;
@@ -209,4 +225,10 @@ body {
 
 .opst-9 {
     opacity: 0.9;
+}
+
+a {
+    &:hover{
+        text-decoration: none;
+    }
 }
