@@ -43,7 +43,12 @@
 
 
     .btn-gradient-border {
-      background: transparent;
+      height: 40px;
+      padding-top: 7px;
+
+      .attach-file {
+        opacity: 0;
+      }
     }
 
     .form-text, .text-color-light-gray {

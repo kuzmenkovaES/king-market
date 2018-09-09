@@ -37,13 +37,13 @@ body {
     @import 'tablets/main-tablet';
  }
 
-@media (min-width: $desctop-start) and (max-width: $desctop-end) {
+@media (min-width: $desctop-start) {
     @import 'desctop/main-desctop';
 }
-
-@media (min-width: $large-desctop) {
-    @import 'desctop/main-desctop';
-}
+//
+//@media (min-width: $large-desctop) {
+//    @import 'desctop-1920/main-desctop';
+//}
 
 .header-panel {
     &>.row {
@@ -66,13 +66,9 @@ body {
             .right-side-box {
                 background: linear-gradient(to bottom, $color-gradient-header-srart-left, $color-gradient-header-finish-right);
 
-                .row {
-                    position: absolute;
-
-                    .king-size {
-                        font-weight: bold;
-                        text-align: right;
-                    }
+                .king-size {
+                    font-weight: bold;
+                    text-align: right;
                 }
             }
         }
@@ -160,7 +156,7 @@ body {
     font-weight: bold;
     border-radius: 4px;
     background-repeat-x: no-repeat;
-    background-image: linear-gradient(to right, $color-gradient-btn-start 25%, $color-gradient-btn-finish);
+    background-image: linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start);
 
     &:hover {
         color: $crimson !important;
@@ -169,8 +165,8 @@ body {
 
 .btn-gradient-border {
     color: black;
-    border-left: 3px solid $color-gradient-btn-start;
-    border-right: 3px solid $color-gradient-btn-finish;
+    border-left: 3px solid  $color-gradient-btn-finish;
+    border-right: 3px solid $color-gradient-btn-start;
     border-radius: 5px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -180,10 +176,10 @@ body {
     -webkit-background-size: 100% 3px;
     -moz-background-size: 100% 3px;
     background-size: 100% 3px;
-    background-image: -webkit-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -webkit-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
-    background-image: -moz-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -moz-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
-    background-image: -o-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), -o-linear-gradient(left, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
-    background-image: linear-gradient(to right, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%), linear-gradient(to right, $color-gradient-btn-start 0%, $color-gradient-btn-finish 100%);
+    background-image: -webkit-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start), -webkit-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start);
+    background-image: -moz-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start), -moz-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start);
+    background-image: -o-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start), -o-linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start);
+    background-image: linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start), linear-gradient(135deg, $color-gradient-btn-finish, $color-gradient-btn-start);
 
     &:hover {
         color: $crimson !important;
@@ -231,4 +227,12 @@ a {
     &:hover{
         text-decoration: none;
     }
+}
+
+.font-weight-extra-bold {
+    font-weight: 800;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600;
 }

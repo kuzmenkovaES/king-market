@@ -6,10 +6,10 @@
   }
 
   .text-4 {
-    font-size: 6em;
+    font-size: 50px;
 
     span {
-      font-size: 1em;
+      font-size: 50px;
     }
   }
 
@@ -18,43 +18,77 @@
 
     span,
     h4 {
-      font-size: 1.4rem;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
     }
   }
 
   .presentation-box {
-    height: 250px;
+    height: 405px;
 
     .left-side-box {
+      position: relative;
+
       .box-5-image {
-        width: 120%;
-        margin-left: -20%;
+        position: absolute;
+        left: -501px;
+        height: 400px;
       }
     }
 
     p,
     strong {
-      font-size: 1.3em;
+      font-size: 20px;
+    }
+
+    .btn-gradient-border {
+      font-size: 18px;
+      width: 384px;
     }
   }
 
   .row-list-item-problem {
-      position: relative;
+    position: relative;
+    margin-top: 53px;
 
-      .colored-rounds {
-        position: absolute;
-        top: 8px;
-        left: 0px;
-        width: 12px;
-        height: 12px;
-        border-radius: 10px;
-        background: $crimson;
-        display: inline-block;
+    .title-list {
+      font-weight: 600;
+      font-size: 20px;
+    }
 
-        &+p {
-          font-size: 1rem;
+    .colored-rounds {
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      background: $crimson;
+      display: inline-block;
+
+      &+p {
+        font-size: 15px;
+      }
+    }
+
+    &+.row {
+      .text-color-light-gray {
+        font-size: 22px;
+      }
+
+      &+.row {
+        .font-weight-bold {
+          font-size: 32px;
         }
       }
+    }
+  }
+
+  .font-weight-semi-bold {
+    font-size: 20px;
   }
 
   .text-resolve-problem{
@@ -63,16 +97,21 @@
 
   .list-style-plus {
     margin-bottom: 30px;
+
     > li {
-      font-size: 1rem;
+      font-size: 15px;
     }
   }
 
   .right-side-box {
     position: relative;
 
-    .font-weight-bold {
-      font-size: 1.1rem;
+    h5.font-weight-semi-bold {
+      font-size: 20px;
+
+      span {
+        font-size: 20px;
+      }
     }
 
     .box-5-image {
@@ -110,7 +149,7 @@
 
     .text,
     strong {
-      font-size: 1.1rem;
+      font-size: 15px;
     }
   }
 }

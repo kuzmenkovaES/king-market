@@ -30,8 +30,8 @@
 
     .card-body {
       > div {
-        &:first-child {
-          font-size: 12px;
+        &:last-child {
+          overflow: hidden;
         }
       }
     }

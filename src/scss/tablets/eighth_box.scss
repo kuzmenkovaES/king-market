@@ -27,9 +27,6 @@
 
   .row-card-bonus {
     .card-body {
-      .img-gift {
-        width: 108%!important;
-      }
 
       .col-md {
         &:first-child {
@@ -55,8 +52,8 @@
       }
 
       > div {
-        &:first-child {
-          font-size: 12px;
+        &:last-child {
+          overflow: hidden;
         }
       }
     }

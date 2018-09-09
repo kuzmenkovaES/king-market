@@ -2,31 +2,37 @@
 
 .second-panel {
   position: relative;
+  .left-transform {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -230px;
+    bottom: 27%;
+  }
 
-  .left-transform,
   .right-transform {
-    display: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -230px;
+    bottom: 27%;
   }
 
   >.row {
     padding-left: 20px;
 
     .text-1 {
-      font-size: 50px;
-
-      span {
-        font-size: 50px;
-      }
+      font-size: 6em;
     }
 
     p,
     strong {
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 
-  .text-color-light-gray {
-    font-size: 16px;
+  .font-weight-bold {
+    span {
+      font-size: inherit;
+    }
   }
 
   .card-deck {
@@ -49,14 +55,14 @@
 
   .text-color-light-gray,
   .card-text {
-    font-size: 24px;
+    font-size: 10px;
     width: 80%;
   }
 
   .collapse {
     p,
     strong {
-      font-size: 15px;
+      font-size: 1.1rem;
     }
   }
 
@@ -64,12 +70,8 @@
     margin-left: -49px;
 
     .card-body {
-      min-height: 180px;
+      min-height: 140px;
     }
-  }
-
-  .card-title {
-    font-size: 24px;
   }
 
   .toggle-element {

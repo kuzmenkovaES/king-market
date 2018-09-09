@@ -2,37 +2,53 @@
   .row {
     padding-left: 15px;
 
+    .text-title {
+      font-size: 50px;
+    }
+
     >p {
-      font-size: 13px;
+      font-size: 20px;
     }
   }
 
   .right-side-box {
     padding-left: 0;
     margin-bottom: 20px;
+    position: relative;
+    height: 501px;
 
     .image-box {
-      width: 126%;
-      margin-left: -20%;
+      position: absolute;
+      height: 501px;
+      left: -560px;
     }
   }
 
   .list-style-plus {
     li {
       div {
-        margin-top: -14px;
+        margin-top: -26px;
+
         p, span {
-          font-size: 1rem;
+          font-size: 15px;
         }
 
         h5 {
           letter-spacing: 1px;
+          font-size: 26px;
         }
       }
+
       &:before {
         text-indent: -30px;
+        font-weight: bold;
+        font-size: 16px;
       }
     }
+  }
+
+  .title-form {
+    font-size: 26px;
   }
 
   .form-contacts {
@@ -60,7 +76,12 @@
     }
 
     .btn-gradient-border {
-      background: transparent;
+      height: 40px;
+      padding-top: 7px;
+
+      .attach-file {
+        opacity: 0;
+      }
     }
 
     .form-text, .text-color-light-gray {
