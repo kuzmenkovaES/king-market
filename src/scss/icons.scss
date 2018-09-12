@@ -27,6 +27,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quote1:before {
+  content: "\e90c";
+  color: #523ab4;
+}
+.icon-vk .path1:before {
+  content: "\e90d";
+  color: rgb(77, 118, 161);
+}
+.icon-vk .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .icon-arrow-down:before {
   content: "\e900";
   color: #fff;
@@ -45,7 +58,7 @@
 .icon-play:before {
   content: "\e904";
 }
-.icon-quote {
+.icon-quote-italic {
   &:before{
     content: "\e905";
     color: #523ab4;
@@ -81,6 +94,9 @@
 }
 .icon-plus:before {
   content: "\ea0a";
+}
+.icon-telegram:before {
+  content: "\ea95";
 }
 
 .list-style-plus {
