@@ -1,10 +1,20 @@
 .eighth-panel {
+  &.addition-box {
+    margin-top: 0;
+
+    a.btn-gradient {
+      margin-left: 550px;
+      padding: 15px 10px;
+      font-weight: 600;
+    }
+  }
+
   .row {
     padding-right: 15px;
     padding-left: 15px;
 
     .text-4 {
-      font-size: 2.5rem;
+      font-size: 75px;
       text-align: center;
 
       .wrap-title {
@@ -12,19 +22,15 @@
       }
     }
 
-    .text-center {
-      font-size: 1.3em;
-    }
-
     .text-color-purple {
       position: relative;
-      font-size: 2.5rem;
+      font-size: 75px;
 
       .text-border-purple {
-        font-size: 2.5rem;
+        font-size: 75px;
         position: absolute;
-        top: 3px;
-        right: -4px;
+        top: 13px;
+        right: -8px;
         z-index: -100;
       }
     }
@@ -32,48 +38,18 @@
 
   .row-card-bonus {
     .card-body {
+
       > div {
         &:first-child {
           padding-bottom: 0!important;
         }
       }
       p {
-        font-size: 11px;
+        font-size: 15px;
       }
 
       span {
-        font-size: 0.9em;
-      }
-
-      .gift {
-        width: 30px;
-        height: 20px;
-        display: inline-table;
-
-        &.emerald-crown {
-          background: url("../images/crown-1.png") no-repeat;
-          background-size: 100%;
-        }
-        &.diamond-crown {
-          background: url("../images/crown-2.png") no-repeat;
-          background-size: 100%;
-        }
-        &.red-diamond-crown {
-          background: url("../images/crown-3.png") no-repeat;
-          background-size: 100%;
-        }
-        &.blue-diamond-crown {
-          background: url("../images/crown-4.png") no-repeat;
-          background-size: 100%;
-        }
-        &.white-diamond-crown {
-          background: url("../images/crown-5.png") no-repeat;
-          background-size: 78%;
-        }
-        &.black-diamond-crown {
-          background: url("../images/crown-6.png") no-repeat;
-          background-size: 80%;
-        }
+        font-size: 15px;
       }
 
       br {
@@ -87,9 +63,19 @@
 
       > div {
         &:first-child {
-          font-size: 12px;
+          font-size: 15px;
         }
       }
     }
+  }
+
+  .group-sign-up {
+    -ms-flex-align: baseline!important;
+    align-items: baseline!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+
   }
 }

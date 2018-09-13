@@ -4,30 +4,30 @@
   .row{
     padding-right: 15px;
 
-    &.d-flex {
+    &.title-box {
+      text-align: center;
+      margin-bottom: 30px;
+
       .text-4 {
-        font-size: 3.5em;
+        font-size: 75px;
 
         span {
-          font-size: 2.5rem;
+          font-size: 75px;
         }
-      }
-
-      p {
-        font-size: 1.5em;
       }
     }
   }
 
   .box-image {
     img {
-      width: 126%;
+      width: 140%;
       margin-right: -20%;
     }
   }
 
   .btn-registration {
     margin-top: -15px;
+    padding: 0 80px;
   }
 
   .list-style-plus {
@@ -35,26 +35,27 @@
       margin-bottom: 10px;
 
       div {
-        margin-top: -13px;
+        margin-top: -30px;
 
         p {
-          font-size: 12px;
+          font-size: 15px;
         }
 
         h5 {
+          font-size: 20px;
           letter-spacing: 1px;
         }
       }
 
       &:before {
-        text-indent: -30px;
+        text-indent: -40px;
       }
     }
   }
 
   .list-with-dashed {
     li {
-      font-size: 12px;
+      font-size: 15px;
     }
   }
 }

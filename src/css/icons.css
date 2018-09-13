@@ -14,10 +14,15 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-quote:before, .quotation-box:before {
+  content: "\e90c";
+  color: #523ab4;
+  font-size: 60px; }
 
 .icon-arrow-down:before {
   content: "\e900";
@@ -37,7 +42,7 @@
 .icon-play:before {
   content: "\e904"; }
 
-.icon-quote:before, .quotation-box:before {
+.icon-quote-italic:before {
   content: "\e905";
   color: #523ab4;
   font-size: 3rem; }
@@ -59,7 +64,8 @@
   color: #475993; }
 
 .icon-social-instagram:before {
-  content: "\e909"; }
+  content: "\e909";
+  font-size: 30px; }
 
 .icon-social-twitter:before {
   content: "\e90a";
@@ -70,12 +76,47 @@
   color: #f61c0d; }
 
 .icon-plus:before {
-  content: "\ea0a"; }
+  content: "\1f302"; }
+
+.icon-telegram:before {
+  content: "\ea95";
+  color: #4d76a1;
+  font-size: 30px; }
+
+.icon-button-close .path1 {
+  font-family: 'icon' !important;
+  font-size: 40px; }
+  .icon-button-close .path1:before {
+    content: "\e90f";
+    color: #f5554b; }
+
+.icon-button-close .path2 {
+  font-family: 'icon' !important;
+  font-size: 40px; }
+  .icon-button-close .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: white; }
+
+.icon-vk .path1 {
+  font-family: 'icon' !important;
+  font-size: 30px; }
+  .icon-vk .path1:before {
+    content: "\e90d";
+    color: #4d76a1; }
+
+.icon-vk .path2 {
+  font-family: 'icon' !important;
+  font-size: 30px; }
+  .icon-vk .path2:before {
+    content: "\e90e";
+    margin-left: -1em;
+    color: white; }
 
 .list-style-plus > li {
   list-style-type: none; }
   .list-style-plus > li:before {
-    content: "\ea0a";
+    content: "\1f302";
     font-family: 'icon' !important;
     color: #F2006C;
     display: inline-block;
@@ -86,4 +127,4 @@
   .quotation-box:before {
     font-family: 'icon' !important;
     position: absolute;
-    left: -70px; }
+    left: -110px; }

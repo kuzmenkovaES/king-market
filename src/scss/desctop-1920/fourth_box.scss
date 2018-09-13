@@ -2,28 +2,32 @@
 
 .fourth-panel {
   .text-4 {
+    font-size: 75px;
+    font-weight: 800;
+
     span {
-      font-size: 1.4em;
+      font-size: 75px;
+      font-weight: 800;
     }
   }
   .carousel-control-next,
   .carousel-control-prev {
-    top: 150px;
+    top: 250px;
     width: 50px;
     height: 50px;
     border-radius: 2px !important;
   }
 
   .carousel-control-prev {
-    left: 1%;
+    left: -5%;
   }
 
   .carousel-control-next {
-    right: 1%;
+    right: -5%;
   }
 
   .carousel {
-    padding: 0 7%;
+    //padding: 0 7%;
 
     .carousel-item {
       > div {
@@ -41,22 +45,41 @@
         font-size: 1.2em;
       }
 
+      .box-item {
+        position: relative;
+
+        .quote-box {
+          bottom: 0;
+
+          .icon-quote-box {
+            width: 280px;
+            position: relative;
+
+            .icon-quote {
+              position: absolute;
+              right: 30px;
+            }
+          }
+        }
+      }
+
+
       .box-image {
         position: relative;
 
         .border-image {
           position: absolute;
           top: 10px;
-          left: -15px;
-          width: 150px;
-          height: 220px;
+          left: -20px;
+          width: 250px;
+          height: 370px;
           border: 1px solid rgba($crimson, 0.4);
           z-index: -1;
         }
 
         .carusel-image {
-          width: 150px;
-          height: 215px;
+          width: 250px;
+          height: 358px;
         }
       }
     }

@@ -2,31 +2,34 @@
 
 .second-panel {
   position: relative;
+
   .left-transform {
-    transform: rotate(90deg);
-    position: absolute;
-    left: -230px;
-    bottom: 27%;
+    @media (min-width: 1420px) and (max-width: 1780.98px) {
+      display: none;
+    }
+
+    @media (min-width: 1781px) {
+      position: absolute;
+      left: -230px;
+      bottom: 0;
+    }
   }
 
   .right-transform {
-    transform: rotate(-90deg);
-    position: absolute;
-    right: -230px;
-    bottom: 27%;
+    @media (min-width: 1420px) and (max-width: 1780.98px) {
+      display: none;
+    }
+
+    @media (min-width: 1781px) {
+      position: absolute;
+      right: -230px;
+      bottom: 0;
+
+    }
   }
 
   >.row {
     padding-left: 20px;
-
-    .text-1 {
-      font-size: 6em;
-    }
-
-    p,
-    strong {
-      font-size: 12px;
-    }
   }
 
   .font-weight-bold {
@@ -40,9 +43,10 @@
     margin-left: 0%;
 
     .card {
+
       &:first-child{
-        padding-right: 25px;
-        margin-right: 28px;
+        padding-right: 41px;
+        margin-right: 31px;
         margin-left: 0;
       }
 
@@ -50,31 +54,46 @@
         padding-right: 4%;
         margin: 0;
       }
+
+      &.card-bonus {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &.card-career {
+        padding-right: 0;
+      }
     }
   }
 
-  .text-color-light-gray,
   .card-text {
-    font-size: 10px;
+    font-size: 15px;
     width: 80%;
+  }
+  .card-title {
+    font-size: 24px;
+    font-weight: 800;
   }
 
   .collapse {
     p,
     strong {
-      font-size: 1.1rem;
+      //font-size: 1.1rem;
     }
   }
 
   .card-toggle {
-    margin-left: -49px;
+    margin-left: -30px;
 
     .card-body {
-      min-height: 140px;
+      min-height: 210px;
     }
   }
 
   .toggle-element {
-    font-size: 10px;
+    p,
+    strong {
+      font-size: 15px;
+    }
   }
 }

@@ -1,4 +1,26 @@
+@import "variables";
+
 .third-panel {
+  @media (max-width: $extra-sm-mobile) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $land-mobile-start) and (max-width: $land-mobile-end) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $tablet-start) and (max-width: $tablet-end) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $desctop-start) and (max-width: 1419.98px){
+    margin-top: 150px;
+  }
+
+  @media (min-width: 1420px) {
+    margin-top: 160px;
+  }
+
   .left-side-box {
     position: relative;
 

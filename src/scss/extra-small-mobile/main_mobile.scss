@@ -8,21 +8,19 @@
 @import 'seventh_box';
 @import 'eighth_box';
 @import 'ninth_box';
+@import 'modalHow';
+
 
 * {
-    font-size: 0.7rem;
+    font-size: 16px;
 }
 
 .header-panel {
-    max-height: 40%;
-    height: 400px;
+    height: 100vh;
     margin-bottom: 80px;
 
     &>.row {
         .left-side-box {
-            //background: url("../../images/box-1-bg.png")no-repeat;
-            //background-size: 164%;
-
             .row {
                 padding:0 12%;
                 margin-top: 7%;
@@ -30,29 +28,32 @@
                 text-align: center;
 
                 .title-big-1 {
-                    font-size: 1.4rem;
-                    margin-top: 30px;
-                    margin-bottom: 15px;
+                    font-size: 30px;
+                    margin-top: 50px;
+                    margin-bottom: 25px;
 
                     span {
-                        font-size: inherit;
+                        font-size: 30px;
                     }
                 }
 
                 .text-color-light-gray {
-                    font-size: 0.9rem;
+                    font-size: 15px;
+                    margin-bottom: 25px;
                 }
             }
         }
     }
 
     .btn-bottom {
+        position: absolute;
+        bottom: 0;
         .btn-lang {
             background: transparent;
         }
 
         .btn-group-sign-in {
-            float: right;
+            float: left;
 
             .btn {
                 color: $crimson;
@@ -66,7 +67,7 @@
 
     .lion-header {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 30px;
         @extend .img-center;
 
 
@@ -75,7 +76,7 @@
         }
 
         @media (min-width: 375px) {
-            max-width: 110px;
+            max-width: 120px;
         }
     }
 }
@@ -94,11 +95,21 @@
     }
 
     .media-box {
-        .text-color-light-gray {
-            margin-bottom: 0.7rem;
+        padding-left: 0;
+
+        .we-are-in-app {
+           div {
+               span {
+                   padding: 10px 0;
+               }
+           }
         }
 
-        .col-6 {
+        .text-color-light-gray {
+            margin-bottom: 14px;
+        }
+
+        .col-12 {
             margin-right: 0.5rem;
 
             .views {
@@ -110,10 +121,6 @@
                 margin-bottom: 0;
             }
         }
-
-        .icon {
-            font-size: 15px;
-        }
     }
 
     .logo {
@@ -122,8 +129,8 @@
 }
 
 .logo {
-    width: 50px;
-    height: 30px;
+    width: 90px;
+    height: 90px;
 
     @extend .img-center;
 }

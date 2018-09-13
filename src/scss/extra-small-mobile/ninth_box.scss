@@ -1,18 +1,10 @@
 .ninth-panel {
   .row {
     padding-left: 15px;
-
-    .text-color-light-gray {
-      font-size: 1.6em;
-
-      span {
-        font-size: 1em;
-      }
-    }
   }
 
   .card {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     .card-body {
       width: 100%;
@@ -23,22 +15,38 @@
       }
 
       @media (min-width: 375px) {
-        height: 250px;
+        height: 248px;
+      }
+
+      .bd-highlight {
+        p {
+          font-size: 13px;
+        }
       }
 
       .card-text {
-        font-size: 1.7rem;
+        font-size: 20px;
 
         span {
-          font-size: 1.7rem;
+          font-size: 20px;
         }
       }
     }
   }
 
-  .btn-gradient-border {
-    //background: transparent;
+  .box-title {
+    .text-1 {
+      font-size: 30px;
+      font-weight: 800;
+    }
   }
+
+  .box-video {
+    .col-sm {
+      padding: 0;
+    }
+  }
+
 
   .news-1 {
     background: url("../images/news-1.png") no-repeat;

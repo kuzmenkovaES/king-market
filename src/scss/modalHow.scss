@@ -1,0 +1,43 @@
+.modal-how {
+  .modal-dialog {
+    max-width: 1300px!important;
+
+    .modal-content {
+      border-radius: 50px;
+    }
+
+    .modal-header {
+      border: 0;
+      height: 80px;
+    }
+
+    .modal-body {
+      padding: 0 150px 80px;
+    }
+
+    .list-modal-item {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .text-title {
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-top: 30px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .btn-gradient {
+    span {
+      color: white;
+    }
+  }
+}

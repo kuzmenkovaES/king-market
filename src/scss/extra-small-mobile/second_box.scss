@@ -1,18 +1,15 @@
 @import '../variables';
 
 .second-panel {
+  margin-top: 90px;
+
   .left-transform,
   .right-transform {
     display: none;
   }
 
   >.row {
-      padding-left: 20px;
-
-    p,
-    strong {
-      font-size: 12px;
-    }
+      padding-left: 4%;
   }
 
   .font-weight-bold {
@@ -29,8 +26,15 @@
 
   .text-color-light-gray,
   .card-text {
-    font-size: 10px;
     width: 80%;
+
+    &.float-left {
+      width: 50%;
+    }
+  }
+
+  .card-deck {
+    padding-left: 0;
   }
 
   .card-toggle {
@@ -43,11 +47,10 @@
 
     .card-body {
       min-height: 140px;
+
+      .card-title {
+        font-size: 20px;
+      }
     }
   }
-
-  .toggle-element {
-    font-size: 10px;
-  }
-
 }

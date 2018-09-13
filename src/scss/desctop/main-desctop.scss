@@ -14,8 +14,7 @@
 }
 
 .header-panel {
-  max-height: 30%;
-  height: 750px;
+  height: 100vh;
 
   &>.row {
 
@@ -126,13 +125,13 @@
       right: -110px;
     }
 
-    @media (min-width: 1061px) and (max-width: $desctop-end) {
+    @media (min-width: 1061px) and (max-width: 1219.98px) {
       max-width: 310px;
       top: 110px;
       right: -130px;
     }
 
-    @media (min-width: $large-desctop) {
+    @media (min-width: 1220px) {
       max-width: 380px;
       top: 30px;
       right: -170px;

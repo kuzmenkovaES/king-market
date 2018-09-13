@@ -1,10 +1,14 @@
 .sixth-panel {
+  .text-title {
+    font-weight: 800;
+    font-size: 75px;
+  }
   .row {
     padding-left: 15px;
+  }
 
-    >p {
-      font-size: 13px;
-    }
+  br {
+    line-height: 1;
   }
 
   .right-side-box {
@@ -12,25 +16,27 @@
     margin-bottom: 20px;
 
     .image-box {
-      width: 126%;
-      margin-left: -20%;
+      margin-left: -58%;
     }
   }
 
   .list-style-plus {
+    padding-left: 80px;
+
     li {
       div {
-        margin-top: -14px;
+        margin-top: -33px;
+
         p, span {
-          font-size: 1rem;
+          font-size: 15px;
         }
 
         h5 {
-          letter-spacing: 1px;
+          font-size: 20px;
         }
       }
       &:before {
-        text-indent: -30px;
+        text-indent: -40px;
       }
     }
   }
@@ -60,11 +66,16 @@
     }
 
     .btn-gradient-border {
-      background: transparent;
+      height: 50px;
+      padding-top: 7px;
+
+      .attach-file {
+        opacity: 0;
+      }
     }
 
     .form-text, .text-color-light-gray {
-      font-size: 1rem;
+      font-size: 15px;
     }
   }
 }
