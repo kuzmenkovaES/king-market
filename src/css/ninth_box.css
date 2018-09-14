@@ -30,8 +30,21 @@
     opacity: 0.9;
     color: white; }
 
-.ninth-panel .news-1 {
-  background: url("../images/news-1.png") no-repeat; }
+.ninth-panel .iframe-box-video {
+  display: block;
+  overflow: hidden;
+  border: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  background-color: white; }
 
-.ninth-panel .news-2 {
-  background: url("../images/news-2.png") no-repeat; }
+.ninth-panel .empty-box-video {
+  opacity: 0; }

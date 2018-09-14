@@ -3,10 +3,7 @@
     padding-left: 15px;
   }
 
-  .card {
-    margin-bottom: 25px;
-
-    .card-body {
+  .card-body {
       width: 100%;
       color: white;
       height: 195px;
@@ -25,7 +22,6 @@
         }
       }
     }
-  }
 
   .box-title {
     .text-1 {
@@ -35,19 +31,13 @@
   }
 
   .box-video {
-    .col-sm {
+    >div {
       padding: 0;
+      margin: 30px 0 ;
+
+      &:first-child {
+        margin-right: 30px;
+      }
     }
-  }
-
-
-  .news-1 {
-    background: url("../images/news-1.png") no-repeat;
-    background-size: 100%;
-  }
-
-  .news-2 {
-    background: url("../images/news-2.png") no-repeat;
-    background-size: 100%;
   }
 }

@@ -1,4 +1,5 @@
 @import "../variables";
+
 .ninth-panel {
   .row {
     padding-left: 15px;
@@ -6,33 +7,25 @@
     .text-color-light-gray {
       margin-bottom: 0;
     }
-
-    &.box-title {
-      margin-bottom: 30px;
-    }
   }
 
-  .card {
-    margin-bottom: 15px;
+  .card-body {
+    width: 100%;
+    color: white;
 
-    .card-body {
-      width: 100%;
-      color: white;
+    @media (min-width: $desctop-start) and (max-width: 1199.98px){
+      height: 345px;
+    }
 
-      @media (min-width: $desctop-start) and (max-width: 1199.98px){
-        height: 345px;
-      }
+    @media (min-width: 1200px) {
+      height: 415px;
+    }
 
-      @media (min-width: 1200px) {
-        height: 415px;
-      }
+    .card-text {
+      font-size: 26px;
 
-      .card-text {
+      span {
         font-size: 26px;
-
-        span {
-          font-size: 26px;
-        }
       }
     }
   }
@@ -40,20 +33,11 @@
   .box-video {
     >div {
       padding: 0;
+      margin: 30px 0 ;
 
       &:first-child {
         margin-right: 30px;
       }
     }
-  }
-
-  .news-1 {
-    background: url("../images/news-1.png") no-repeat;
-    background-size: 100%;
-  }
-
-  .news-2 {
-    background: url("../images/news-2.png") no-repeat;
-    background-size: 100%;
   }
 }
