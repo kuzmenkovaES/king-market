@@ -48,6 +48,11 @@
     .btn-bottom {
         position: absolute;
         bottom: 0;
+
+        .btn-group-lang {
+            float: left;
+        }
+
         .btn-lang {
             background: transparent;
         }
@@ -72,11 +77,11 @@
 
 
         @media (max-width: 374.98px) {
-            max-width: 100px;
+            max-width: 40px;
         }
 
         @media (min-width: 375px) {
-            max-width: 120px;
+            max-width: 90px;
         }
     }
 }

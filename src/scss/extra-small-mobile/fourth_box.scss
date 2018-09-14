@@ -5,9 +5,22 @@
     display: none;
   }
 
+  .quote-box {
+    .icon-quote-box {
+      margin-right: 30px;
+    }
+    p, span {
+      font-size: 13px;
+
+      &:before {
+        font-size: 30px;
+      }
+    }
+  }
+
   .text-4 {
     span {
-      font-size: 1.4em;
+      font-size: 30px;
     }
   }
   .carousel-control-next,
@@ -32,13 +45,13 @@
 
     .carousel-item {
       .text-name {
-        font-size: 2em;
+        font-size: 20px;
       }
       .position {
-        font-size: 1.1em;
+        font-size: 15px;
       }
       .description {
-        font-size: 1.2em;
+        font-size: 13px;
       }
 
       .box-image {

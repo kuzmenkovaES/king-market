@@ -1,0 +1,34 @@
+.modal-how {
+  .modal-dialog {
+
+    .modal-body {
+      padding: 0 30px 30px;
+    }
+
+    .list-modal-item {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .text-title {
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  .text {
+    font-size: 15px;
+    margin-top: 30px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .list-style-plus {
+    .list-modal-item {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -8,21 +8,20 @@
 @import 'seventh_box';
 @import 'eighth_box';
 @import 'ninth_box';
+@import 'modalHow';
+
 
 * {
-    font-size: 0.8rem;
+    font-size: 16px;
 }
 
 .header-panel {
-    max-height: 30%;
-    height: 450px;
+    height: 100vh;
     margin-bottom: 80px;
 
     &>.row {
-        .left-side-box {
-            //background: url("../../images/box-1-bg.png")no-repeat;
-            //background-size: 135%;
 
+        .left-side-box {
             .row {
                 padding:0 12%;
                 margin-top: 7%;
@@ -30,49 +29,55 @@
                 text-align: center;
 
                 .title-big-1 {
-                    font-size: 1.4rem;
-                    margin-top: 30px;
-                    margin-bottom: 15px;
+                    font-size: 30px;
+                    margin-top: 5%;
+                    margin-bottom: 3%;
 
                     span {
-                        font-size: inherit;
+                        font-size: 30px;
                     }
                 }
 
                 .text-color-light-gray {
-                    font-size: 0.9rem;
+                    font-size: 15px;
+                    margin-bottom: 25px;
                 }
             }
         }
     }
 
     .btn-bottom {
-      padding:0 12%;
+        position: absolute;
+        bottom: 0;
+        .btn-lang {
+            background: transparent;
+        }
 
-      .btn-lang {
-          background: transparent;
-      }
+        .btn-group-sign-in {
+            float: right;
 
-      .btn-group-sign-in {
-          float: right;
+            .btn {
+                color: $crimson;
 
-          .btn {
-              color: $crimson;
-
-              .icon:before {
-                  color: $crimson;
-              }
-          }
-      }
+                .icon:before {
+                    color: $crimson;
+                }
+            }
+        }
     }
 
     .lion-header {
         width: 100%;
-        margin-top: 10px;
-        @extend .img-big-center;
+        margin-top: 30px;
+        @extend .img-center-big;
 
-        @media (min-width: $land-mobile-start) {
-            max-width: 110px;
+
+        @media (max-width: 374.98px) {
+            max-width: 100px;
+        }
+
+        @media (min-width: 375px) {
+            max-width: 120px;
         }
     }
 }
@@ -81,44 +86,65 @@
     .row {
         padding-left: 15px;
     }
+
+    .we-are-in-app {
+        -ms-flex-align: start!important;
+        align-items: flex-start!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+
     .footer-contacts {
-        font-size: 0.9rem;
+        font-size: 16px;
 
         span {
-            font-size: 0.9rem;
+            font-size: 16px;
         }
     }
+
     .media-box {
-        .text-color-light-gray {
-            margin-bottom: 0.5rem;
+        padding-left: 0;
+
+        .we-are-in-app {
+           div {
+               span {
+                   padding: 10px 0;
+               }
+           }
         }
-        .col-6 {
-            margin-right: 0.7rem;
+
+        .text-color-light-gray {
+            margin-bottom: 14px;
+        }
+
+        .col-12 {
+            margin-right: 0.5rem;
 
             .views {
-                font-size: 0.7rem;
+                font-size: 0.6rem;
             }
 
             .media-link {
-                font-size: 0.9rem;
+                font-size: 14px;
                 margin-bottom: 0;
             }
         }
+    }
 
-        .icon {
-            font-size: 1.3rem;
-        }
+    .logo {
+        margin-left: 10px!important;
     }
 }
 
 .logo {
-    width: 70px;
-    height: 50px;
-    @extend .img-big-center;
+    width: 90px;
+    height: 90px;
+
+    @extend .img-center-big;
 }
 
-.img-big-center {
-    margin-left: auto!important;
-    margin-right: auto!important;
-    display: block;
+.img-center-big {
+   margin-left: auto!important;
+   margin-right: auto!important;
+   display: block;
 }

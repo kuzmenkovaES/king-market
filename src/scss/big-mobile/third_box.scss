@@ -1,27 +1,29 @@
 .third-panel {
   .left-side-box {
     .text-1 {
-      font-size: 9em;
+      font-size: 30px;
     }
     .text-3 {
-      font-size: 5em;
-      margin-top: 13px;
+      font-size: 30px;
+      margin-top: 0;
     }
 
     p {
-      font-size: 1.5em;
+      margin-left: -40px;
     }
 
-    .box-3-image {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+    .box-img {
+      height: 270px;
+      overflow: hidden;
+      margin-left: -15%;
+      width: 137%;
+      margin-bottom: 40px;
 
-  .right-side-box {
-    p,
-    strong {
-      font-size: 1.4em;
+      .box-3-image {
+        width: 110%;
+        margin-left: -10%;
+      }
     }
+
   }
 }

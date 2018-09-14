@@ -6,57 +6,47 @@
   }
 
   .text-4 {
-    font-size: 6em;
+    font-size: 30px;
 
     span {
-      font-size: 1em;
+      font-size: 30px;
     }
   }
 
   .mark-title {
     display: block;
 
-    span,
     h4 {
-      font-size: 1.4rem;
-    }
-
-    p {
-      font-size: 12px;
+      font-size: 20px;
+      font-weight: 800;
     }
   }
 
   .presentation-box {
-    height: 390px;
     margin-bottom: 20px;
 
     .left-side-box {
       position: relative;
 
+      margin-bottom: 30px;
+
       .box-5-image {
-        width: 100%;
+        width: 140%;
+        margin-left: -17%;
       }
 
       & + div {
         p {
-          font-size: 12px;
+          font-size: 15px;
         }
 
         .btn-gradient-border {
           span {
             vertical-align: text-bottom;
+            font-size: 16px;
           }
         }
       }
-    }
-
-    p,
-    strong {
-      font-size: 1.3em;
-    }
-
-    .btn-gradient-border {
-      //background: transparent;
     }
   }
 
@@ -74,63 +64,67 @@
         display: inline-block;
 
         &+p {
-          font-size: 1.1rem;
+          font-size: 15px;
         }
       }
   }
 
-  .text-resolve-problem {
-      font-size: 1.5rem;
-  }
+  .box-list-plus {
+    padding: 0;
 
-  .list-style-plus {
-    margin-bottom: 30px;
+    .list-style-plus {
+      margin-bottom: 30px;
+      padding-left: 35px;
 
-    > li {
-      font-size: 1rem;
+      > li {
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
     }
   }
 
   .right-side-box {
     position: relative;
 
-    .font-weight-bold {
-      font-size: 1.1rem;
-    }
-
     .box-5-image {
-      width: 100%;
+      width: 140%;
+      margin-left: -18%;
     }
 
     .step-ico {
       display: inline-block;
       position: relative;
+      margin-left: 0!important;
 
       &.active {
-        .line-ico {
-          border-top-color: $crimson;
+        .title-step-ico {
+          color: $crimson;
+        }
+
+      }
+
+      &.col-5 {
+
+        p.text-color-light-gray {
+          font-size: 13px;
         }
       }
 
-      p.text-color-light-gray {
-        font-size: 0.66rem;
-      }
-
       .title-step-ico {
-        font-size: 1rem;
+        font-size: 16px;
       }
     }
 
     .line-ico {
-      position: absolute;
-      width: 20px;
-      right: 10px;
-      top: 0;
+      display: none;
     }
+  }
 
-    .text,
-    strong {
-      font-size: 1.1rem;
+  .font-weight-extra-bold {
+    font-size: 20px;
+
+    span {
+      font-size: 20px;
     }
   }
 }

@@ -2,8 +2,10 @@
   .row {
     padding-left: 15px;
 
-    >p {
-      font-size: 12px;
+    .text-title {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 30px;
     }
   }
 
@@ -12,20 +14,28 @@
     margin-bottom: 20px;
 
     .image-box {
-      width: 100%;
+      width: 141%;
+      margin-left: -17%;
     }
   }
 
   .list-style-plus {
     li {
       div {
-        margin-top: -14px;
+        margin-top: -25px;
+        
+        .text-color-light-gray {
+          color: #000;
+        }
+
         p, span {
-          font-size: 1rem;
+          font-size: 15px;
         }
 
         h5 {
           letter-spacing: 1px;
+          font-size: 16px;
+          margin-bottom: 10px!important;
         }
       }
       &:before {
@@ -38,13 +48,18 @@
     padding-right: 15px;
 
     label {
-      font-size: 12px;
+      font-size: 15px;
     }
-
 
     .btn-gradient-border {
       height: 40px;
-      padding-top: 7px;
+      padding-top: 10px;
+
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
 
       .attach-file {
         opacity: 0;

@@ -1,18 +1,15 @@
 @import '../variables';
 
 .second-panel {
+  margin-top: 90px;
+
   .left-transform,
   .right-transform {
     display: none;
   }
 
   >.row {
-    padding-left: 20px;
-
-    p,
-    strong {
-      font-size: 12px;
-    }
+      padding-left: 4%;
   }
 
   .font-weight-bold {
@@ -21,29 +18,38 @@
     }
   }
 
+  .btn-gradient {
+    &+.card-text {
+      float: left;
+    }
+  }
+
   .text-color-light-gray,
   .card-text {
-    font-size: 10px;
     width: 80%;
+
+    &.float-left {
+      width: 50%;
+    }
+  }
+
+  .card-deck {
+    padding-left: 0;
   }
 
   .card-toggle {
+    padding-left: 20px;
+
     >div {
       padding: 0;
     }
 
     .card-body {
       min-height: 140px;
+
+      .card-title {
+        font-size: 20px;
+      }
     }
   }
-  .card-deck {
-    .card:first-child {
-      margin-left: 21px;
-    }
-  }
-
-  .toggle-element {
-    font-size: 10px;
-  }
-
 }

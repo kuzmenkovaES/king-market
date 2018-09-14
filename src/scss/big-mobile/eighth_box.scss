@@ -4,41 +4,77 @@
     padding-left: 15px;
 
     .text-4 {
-      font-size: 2.5rem;
+      font-size: 30px;
     }
 
     .text-center {
-      font-size: 13px;
+      font-size: 16px;
+      text-align: left!important;
     }
 
     .text-color-purple {
       position: relative;
-      font-size: 2.5rem;
+      font-size: 30px;
 
       .text-border-purple {
-        font-size: 2.5rem;
+        font-size: 30px;
         position: absolute;
-        top: 3px;
-        right: -4px;
+        top: 6px;
+        right: -5px;
         z-index: -100;
       }
     }
   }
 
+  &.addition-box {
+    padding: 0 0 0 19px;
+  }
+
   .row-card-bonus {
-    justify-content: center!important;
+    padding: 0;
+    margin-left: 20px;
 
     .card-body {
+
+      p, span {
+        font-size: 14px;
+      }
+
+      br {
+        line-height: 1;
+      }
+
       > div {
         &:last-child {
           overflow: hidden;
+          padding: 0;
+
+          img {
+            width: 125%;
+          }
         }
       }
     }
   }
 
-  .btn-lang {
-    font-size: 13px;
-  }
+  .group-sign-up {
+    .btn-gradient {
+      margin-bottom: 20px;
+    }
 
+    +div p {
+      font-size: 14px;
+    }
+
+    .btn-lang,
+    .text-inline {
+      display: inline;
+      text-align: center;
+    }
+
+    .text-inline {
+      margin-left: 25%;
+    }
+
+  }
 }

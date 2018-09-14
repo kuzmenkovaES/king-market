@@ -1,11 +1,20 @@
 @import '../variables';
 
 .fourth-panel {
+  &.container-fluid {
+    padding: 0 90px;
+    margin-top: 0;
+  }
+  &.big-devices {
+    display: none;
+  }
+
   .text-4 {
     span {
       font-size: 1.4em;
     }
   }
+
   .carousel-control-next,
   .carousel-control-prev {
     top: 200px;
@@ -15,11 +24,11 @@
   }
 
   .carousel-control-prev {
-    left: 1%;
+    left: -7%;
   }
 
   .carousel-control-next {
-    right: 1%;
+    right: -7%;
   }
 
   .carousel {
@@ -34,7 +43,7 @@
         font-size: 1.1em;
       }
       .description {
-        font-size: 1.2em;
+        font-size: 15px;
       }
 
       .box-image {
