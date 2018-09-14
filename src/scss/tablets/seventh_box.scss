@@ -4,17 +4,16 @@
   .row{
     padding-right: 15px;
 
-    &.d-flex {
+    &.title-box {
       .text-4 {
-        font-size: 3.2em;
+        font-size: 50px;
 
         span {
-          font-size: 3.2rem;
+          font-size: 50px;
         }
       }
-
       p {
-        font-size: 1.5em;
+        text-align: left!important;
       }
     }
   }
@@ -34,10 +33,11 @@
       margin-bottom: 10px;
 
       div {
-        margin-top: -13px;
+        margin-top: -28px;
 
         h5 {
           letter-spacing: 1px;
+          font-size: 20px;
         }
       }
 

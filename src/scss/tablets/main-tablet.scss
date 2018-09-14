@@ -51,7 +51,9 @@
   }
 
   .btn-bottom {
-    padding:0 12%;
+    padding: 0 5% 30px 6%;
+    position: absolute;
+    bottom: 1.5%;
 
     .btn-lang {
       background: transparent;
@@ -72,8 +74,8 @@
 
   .lion-header {
     width: 100%;
-    margin-top: 10px;
-    max-width: 110px;
+    margin-top: 7%;
+    max-width: 150px;
     @extend .img-tablet-center;
 
   }

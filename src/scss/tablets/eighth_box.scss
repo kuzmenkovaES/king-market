@@ -4,19 +4,16 @@
     padding-left: 15px;
 
     .text-4 {
-      font-size: 2.5rem;
-    }
-
-    .text-center {
-      font-size: 13px;
+      font-size: 50px;
+      text-align: center;
     }
 
     .text-color-purple {
       position: relative;
-      font-size: 2.5rem;
+      font-size: 50px;
 
       .text-border-purple {
-        font-size: 2.5rem;
+        font-size: 50px;
         position: absolute;
         top: 3px;
         right: -4px;
@@ -57,5 +54,15 @@
         }
       }
     }
+  }
+
+  .btn-lang,
+  .text-inline {
+    display: inline;
+    text-align: center;
+  }
+
+  .text-inline {
+    margin-left: 5%;
   }
 }

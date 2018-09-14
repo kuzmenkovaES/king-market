@@ -1,27 +1,33 @@
 @import '../variables';
 
 .fourth-panel {
+  &.container-fluid {
+    padding: 0 80px;
+    margin-top: 0;
+  }
+
   .text-4 {
-    font-size: 3em;
+    text-align: left!important;
+    font-size: 50px;
 
     span {
-      font-size: 1.4em;
+      font-size: 45px;
     }
   }
   .carousel-control-next,
   .carousel-control-prev {
-    top: 380px;
+    top: 0px;
     width: 50px;
     height: 50px;
     border-radius: 2px !important;
   }
 
   .carousel-control-prev {
-    left: 1%;
+    left: -7%;
   }
 
   .carousel-control-next {
-    right: 1%;
+    right: -7%;
   }
 
   .carousel {
@@ -30,13 +36,13 @@
 
     .carousel-item {
       .text-name {
-        font-size: 2em;
+        font-size: 25px;
       }
       .position {
-        font-size: 1.1em;
+        font-size: 18px;
       }
       .description {
-        font-size: 1.2em;
+        font-size: 16px;
       }
 
       .box-image {

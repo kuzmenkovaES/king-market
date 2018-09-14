@@ -30,7 +30,14 @@
 
     .left-side-box {
       .box-5-image {
-        margin-left: -100%;
+        @media (min-width: $desctop-start) and (max-width: 1199.98px) {
+          margin-left: -100%;
+        }
+
+        @media (min-width: 1200px) {
+          margin-left: -70%;
+        }
+
       }
     }
   }
@@ -74,6 +81,7 @@
 
   .list-style-plus {
     margin-bottom: 30px;
+
     > li {
       font-size: 15px;
       margin-bottom: 20px;
@@ -96,8 +104,11 @@
       position: relative;
 
       &.active {
+        .title-step-ico {
+          color: $crimson;
+        }
         .line-ico {
-          border-top-color: $crimson;
+          display: none;
         }
       }
 
@@ -110,7 +121,7 @@
       }
 
       .title-step-ico {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
       }
     }

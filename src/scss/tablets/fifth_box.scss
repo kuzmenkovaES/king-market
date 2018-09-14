@@ -6,10 +6,10 @@
   }
 
   .text-4 {
-    font-size: 5em;
+    font-size: 50px;
 
     span {
-      font-size: 1em;
+      font-size: 50px;
     }
   }
 
@@ -18,12 +18,13 @@
 
     span,
     h4 {
-      font-size: 1.4rem;
+      font-size: 20px;
     }
   }
 
   .presentation-box {
     margin-bottom: 40px;
+    padding-left: 0;
 
     .left-side-box {
       position: relative;
@@ -32,15 +33,6 @@
       .box-5-image {
         width: 100%;
       }
-    }
-
-    p,
-    strong {
-      font-size: 1.3em;
-    }
-
-    .btn-gradient-border {
-      //background: transparent;
     }
   }
 
@@ -58,19 +50,21 @@
         display: inline-block;
 
         &+p {
-          font-size: 1rem;
+          font-size: 16px;
         }
       }
   }
 
-  .text-resolve-problem {
-      font-size: 1.5rem;
+  .text-resolve-problem,
+  h4 {
+      font-size: 20px;
   }
 
   .list-style-plus {
     margin-bottom: 30px;
     > li {
-      font-size: 1rem;
+      font-size: 15px;
+      margin-bottom: 10px;
     }
   }
 
@@ -90,8 +84,8 @@
       position: relative;
 
       &.active {
-        .line-ico {
-          border-top-color: $crimson;
+        .title-step-ico {
+          color: $crimson;
         }
       }
 
@@ -105,10 +99,7 @@
     }
 
     .line-ico {
-      position: absolute;
-      width: 40px;
-      right: 10px;
-      top: 0;
+      display: none;
     }
 
     .text,

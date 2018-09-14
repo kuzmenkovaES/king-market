@@ -36,26 +36,18 @@
 
   .text-color-light-gray,
   .card-text {
-    //font-size: 10px;
     width: 80%;
-  }
-
-  .collapse {
-    //p,
-    //strong {
-    //  font-size: 1.1rem;
-    //}
   }
 
   .card-toggle {
     margin-left: -49px;
 
     .card-body {
-      min-height: 290px;
+      min-height: 350px;
     }
   }
 
-  .toggle-element {
-    //font-size: 10px;
+  .row-card {
+    padding-left: 0;
   }
 }

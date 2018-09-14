@@ -1,9 +1,11 @@
+@import "../variables";
+
 .eighth-panel {
   &.addition-box {
     margin-top: 0;
 
     a.btn-gradient {
-      margin-left: 550px;
+      margin-left: 25%;
       padding: 15px 10px;
       font-weight: 600;
     }
@@ -14,7 +16,7 @@
     padding-left: 15px;
 
     .text-4 {
-      font-size: 75px;
+      font-size: 50px;
       text-align: center;
 
       .wrap-title {
@@ -24,10 +26,10 @@
 
     .text-color-purple {
       position: relative;
-      font-size: 75px;
+      font-size: 50px;
 
       .text-border-purple {
-        font-size: 75px;
+        font-size: 50px;
         position: absolute;
         top: 13px;
         right: -8px;
@@ -42,8 +44,36 @@
       > div {
         &:first-child {
           padding-bottom: 0!important;
+          font-size: 15px;
+        }
+
+        &:last-child {
+          overflow: hidden;
+          padding: 0;
+
+          @media (min-width: $desctop-start) and (max-width: 1109.98px) {
+            .img-gift {
+              width: 155% !important;
+              margin-left: -14%;
+            }
+          }
+
+          @media (min-width: 1110px) and (max-width: 1199.98px) {
+            .img-gift {
+              width: 115% !important;
+              margin-left: -14%;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            .img-gift {
+              width: 215% !important;
+              margin-left: -24%;
+            }
+          }
         }
       }
+
       p {
         font-size: 15px;
       }
@@ -55,17 +85,6 @@
       br {
         line-height: 1px;
       }
-
-      .img-gift {
-        width: 125% !important;
-        margin-left: -13%;
-      }
-
-      > div {
-        &:first-child {
-          font-size: 15px;
-        }
-      }
     }
   }
 
@@ -76,6 +95,5 @@
     justify-content: center!important;
     display: -ms-flexbox!important;
     display: flex!important;
-
   }
 }
