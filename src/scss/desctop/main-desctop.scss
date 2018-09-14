@@ -10,77 +10,65 @@
 @import 'ninth_box';
 
 * {
-  font-size: 0.8rem;
+  font-size: 20px;
 }
 
 .header-panel {
   height: 100vh;
+  min-height: 800px;
 
   &>.row {
+    min-height: 800px;
 
     .left-side-box {
       background: url("../../images/box-1-bg.png")no-repeat;
-      background-size: 110%;
+      background-size: 116%;
 
       .row {
-        padding-left: 12%;
-        margin-top: 80px;
+        padding-left: 100px;
+        margin-top: 15%;
         flex-direction: column;
 
         .title-big-1 {
           font-size: 50px;
-          margin: 55px 0 40px;
+          margin: 40px 0 30px;
+          font-weight: 800;
 
           span {
             font-size: 50px;
           }
         }
 
-        .text-color-light-gray {
-          font-size: 18px;
-          margin-bottom: 30px;
-        }
-
         .btn-gradient {
-          width: 250px;
+          width: 240px;
           height: 60px;
-          padding-top: 10px;
-          font-size: 24px;
+          margin-top: 3%;
+          padding-top: 15px;
         }
       }
     }
 
     .right-side-box {
-      position: relative;
-
       .row {
-        bottom: 14%;
+        bottom: 5%;
         right: 0;
-        padding: 20px;
+        padding: 26px;
         position: absolute;
 
-        @media (min-width: $desctop-start) and (max-width: 1060.98px) {
+        @media (min-width: $desctop-start) and (max-width: 1199.98px) {
           .king-size {
-            font-size: 7.3rem;
-            line-height: 11rem;
-            font-weight: 900;
-
-            .who {
-              font-weight: 900;
-              font-size: 14rem;
-            }
+            display: none;
           }
         }
 
-        @media (min-width: 1061px) {
+        @media (min-width: 1200px) {
           .king-size {
-            font-size: 7.5rem;
+            font-size: 105.54px;
             line-height: 11rem;
             font-weight: 900;
 
             .who {
-              font-size: 13rem;
-              font-weight: 900;
+              font-size: 10rem;
             }
           }
         }
@@ -89,16 +77,13 @@
   }
 
   .btn-bottom {
-    padding: 0 6%;
+    padding: 0 5% 30px 6%;
     position: absolute;
-    bottom: 40px;
-
-    a {
-      font-size: 24px;
-    }
+    bottom: 1.5%;
 
     .btn-lang {
       background: transparent;
+      font-size: 24px;
     }
 
     .btn-group-sign-in {
@@ -106,6 +91,8 @@
 
       .btn {
         color: white;
+        font-size: 24px;
+        font-weight: 900;
 
         .icon:before {
           color: white;
@@ -119,22 +106,22 @@
     position: absolute;
     z-index: 10;
 
-    @media (min-width: $desctop-start) and (max-width: 1060.98px) {
-      max-width: 290px;
-      top: 100px;
-      right: -110px;
+    @media (min-width: $desctop-start) and (max-width: 1099.98px) {
+      max-width: 400px;
+      top: 10%;
+      right: -325px;
     }
 
-    @media (min-width: 1061px) and (max-width: 1219.98px) {
-      max-width: 310px;
-      top: 110px;
-      right: -130px;
+    @media (min-width: 1100px) and (max-width: 1319.98px) {
+      max-width: 430px;
+      top: 13%;
+      right: -200px;
     }
 
-    @media (min-width: 1220px) {
-      max-width: 380px;
-      top: 30px;
-      right: -170px;
+    @media (min-width: 1320px) {
+      max-width: 450px;
+      top: 166px;
+      right: -220px;
     }
   }
 }
@@ -144,39 +131,61 @@
     padding-left: 15px;
   }
 
+  .we-are-in-app {
+    -ms-flex-align: start!important;
+    align-items: flex-start!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+
+
+  }
+
   .footer-contacts {
-    font-size: 1.4rem;
+    font-size: 32px;
 
     span {
-      font-size: 1.2rem;
+      font-size: 32px;
     }
   }
 
   .media-box {
+    padding: 0;
+
     .text-color-light-gray {
       margin-bottom: 0.5rem;
+      font-size: 15px;
     }
 
-    .col-6 {
+    .col-12 {
       margin-right: 0.9rem;
+      margin-bottom: 20px;
 
       .views {
         font-size: 0.8rem;
       }
 
       .media-link {
-        font-size: 1rem;
+        font-size: 18px;
         margin-bottom: 0;
       }
     }
 
     .icon {
-      font-size: 1.5rem;
+      font-size: 18px;
+      padding: 17px 0;
+
+      &.icon-vk {
+        padding: 0;
+      }
     }
   }
 }
 
 .logo {
-  width: 116px;
-  height: 116px;
+  width: 176px;
+  height: 176px;
+}
+
+.text-1 {
+  font-size: 50px;
 }

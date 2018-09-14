@@ -8,11 +8,6 @@
 
   >.row {
     padding-left: 20px;
-
-    p,
-    strong {
-      font-size: 1em;
-    }
   }
 
   .font-weight-bold {
@@ -41,15 +36,15 @@
 
   .text-color-light-gray,
   .card-text {
-    font-size: 10px;
+    //font-size: 10px;
     width: 80%;
   }
 
   .collapse {
-    p,
-    strong {
-      font-size: 1.1rem;
-    }
+    //p,
+    //strong {
+    //  font-size: 1.1rem;
+    //}
   }
 
   .card-toggle {
@@ -61,6 +56,6 @@
   }
 
   .toggle-element {
-    font-size: 10px;
+    //font-size: 10px;
   }
 }

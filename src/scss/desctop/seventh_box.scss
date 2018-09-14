@@ -4,45 +4,30 @@
   .row{
     padding-right: 15px;
 
-    &+.row {
-      height: 495px;
-    }
+    &.title-box {
+      text-align: center;
+      margin-bottom: 30px;
 
-    &.d-flex {
       .text-4 {
-        font-size: 50px;
-        text-align: center;
+        font-size: 75px;
 
         span {
-          font-size: 50px;
+          font-size: 75px;
         }
-      }
-
-      p {
-        font-size: 20px;
-        text-align: right;
       }
     }
   }
 
   .box-image {
-    position: relative;
-
     img {
-      height: 495px;
-      position: absolute;
-      left: 0;
-      width: 743px;
-    }
-
-    a {
-      bottom: -15px;
-      position: absolute;
+      width: 140%;
+      margin-right: -20%;
     }
   }
 
   .btn-registration {
     margin-top: -15px;
+    padding: 0 80px;
   }
 
   .list-style-plus {
@@ -50,29 +35,27 @@
       margin-bottom: 10px;
 
       div {
-        margin-top: -25px;
+        margin-top: -30px;
 
         p {
           font-size: 15px;
         }
 
         h5 {
-          letter-spacing: 1px;
           font-size: 20px;
+          letter-spacing: 1px;
         }
       }
 
       &:before {
-        text-indent: -30px;
-        font-size: 14px;
+        text-indent: -40px;
       }
     }
   }
 
   .list-with-dashed {
     li {
-      font-size: 12px;
-      margin-bottom: 10px;
+      font-size: 15px;
     }
   }
 }

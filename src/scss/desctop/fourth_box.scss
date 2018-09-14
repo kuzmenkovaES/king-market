@@ -1,47 +1,81 @@
 @import '../variables';
 
 .fourth-panel {
+  &.container-fluid {
+    padding: 0 190px;
+    margin-top: 0;
+  }
+
   .text-4 {
     font-size: 50px;
-    padding-left: 65px;
+    font-weight: 800;
 
     span {
       font-size: 50px;
+      font-weight: 800;
     }
   }
+
   .carousel-control-next,
   .carousel-control-prev {
-    top: 150px;
+    top: 200px;
     width: 70px;
     height: 70px;
     border-radius: 2px !important;
   }
 
   .carousel-control-prev {
-    left: -4%;
+    left: -6%;
   }
 
   .carousel-control-next {
-    right: -4%;
+    right: -6%;
   }
 
   .carousel {
-    padding: 0 7%;
 
     .carousel-item {
       > div {
         flex-direction: row!important;
         display: flex;
+
+        >div {
+            //padding-left: 18px;
+            //padding-right: 10px;
+          >div {
+            padding-left: 18px;
+            padding-right: 10px;
+          }
+        }
       }
 
       .text-name {
-        font-size: 2em;
+        font-size: 40px;
       }
+
       .position {
-        font-size: 1.1em;
+        font-size: 18px;
       }
       .description {
-        font-size: 1.2em;
+        font-size: 15px;
+      }
+
+      .box-item {
+        position: relative;
+
+        .quote-box {
+          margin-top: 3%;
+
+          .icon-quote-box {
+            width: 280px;
+            position: relative;
+
+            .icon-quote {
+              position: absolute;
+              right: 30px;
+            }
+          }
+        }
       }
 
       .box-image {
@@ -50,16 +84,16 @@
         .border-image {
           position: absolute;
           top: 10px;
-          left: -15px;
-          width: 150px;
-          height: 220px;
+          left: -25px;
+          width: 250px;
+          height: 370px;
           border: 1px solid rgba($crimson, 0.4);
           z-index: -1;
         }
 
         .carusel-image {
-          width: 150px;
-          height: 215px;
+          width: 250px;
+          height: 358px;
         }
       }
     }
