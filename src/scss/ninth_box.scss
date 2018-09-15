@@ -52,9 +52,12 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    pointer-events: none;
-    z-index: -1;
     background-color: white;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .empty-box-video {

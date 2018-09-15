@@ -42,9 +42,10 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  pointer-events: none;
-  z-index: -1;
   background-color: white; }
+  .ninth-panel .iframe-box-video img {
+    height: 100%;
+    width: 100%; }
 
 .ninth-panel .empty-box-video {
   opacity: 0; }
