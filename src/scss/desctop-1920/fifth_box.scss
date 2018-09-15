@@ -6,12 +6,12 @@
   }
 
   .text-4 {
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 800;
     margin-bottom: 30px;
 
     span {
-      font-size: 75px;
+      font-size: 50px;
       font-weight: 800;
     }
   }
@@ -21,7 +21,7 @@
 
     span,
     h4 {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 
@@ -95,6 +95,10 @@
       display: inline-block;
       position: relative;
 
+      &.marg-lft {
+        margin-left: 40px;
+      }
+
 
       &.active {
         .line-ico {
@@ -104,7 +108,9 @@
 
       &.col-3,
       &.col-lg-4,
-      &.col-lg-6 {
+      &.col-lg-6,
+      &.col-xl-4,
+      &.col-xl-5 {
         p.text-color-light-gray {
           font-size: 13px;
         }

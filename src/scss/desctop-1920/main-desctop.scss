@@ -15,12 +15,15 @@
 
 .container {
   max-width: 1440px;
+  padding-left: 40px;
 }
 
 .header-panel {
   height: 100vh;
+  min-height: 1100px;
 
   &>.row {
+    min-height: 1100px;
 
     .left-side-box {
       background: url("../../images/box-1-bg.png")no-repeat;
@@ -32,12 +35,12 @@
         flex-direction: column;
 
         .title-big-1 {
-          font-size: 75px;
+          font-size: 50px;
           margin: 40px 0 30px;
           font-weight: 800;
 
           span {
-            font-size: 75px;
+            font-size: 50px;
           }
         }
 
@@ -58,12 +61,12 @@
         position: absolute;
 
         .king-size {
-          font-size: 125.54px;
-          line-height: 11rem;
+          font-size: 105.54px;
+          line-height: 10rem;
           font-weight: 900;
 
           .who {
-            font-size: 11rem;
+            font-size: 10rem;
           }
         }
       }
@@ -172,5 +175,5 @@
 }
 
 .text-1 {
-  font-size: 75px;
+  font-size: 50px;
 }
